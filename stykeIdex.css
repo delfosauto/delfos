@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    /*Cores*/
+    --colorBack: rgb(244, 245, 247);
+    --colorMenu: rgb(220, 49, 46);
+    --colorDiv: rgb(255, 255, 255);
+    --colorTextMain: rgb(30, 30, 30);
+    --colorTextSect: rgb(85, 85, 85);
+    --colorBot: rgb(220, 49, 46);
+    --colorTest1: blue;
+    --colorTest2: red;
+    --colorTest3: green;
+    /*Fote*/
+    --fontMain: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fontMain);
+    color: var(--colorTextSect);
+}
+
+.elemento__explanation {
+    font-size: 20px;
+    font-family: var(--fontMain);
+    text-align: left;
+    line-height: 30px;
+    margin: 10px 0px 10px 20px;
+}
+
+h1 {
+    color: var(--colorTextMain);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--fontMain);
+    font-weight: 400;
+}
+
+/*Section 1 */
+.main__top {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main__top{
+    font-size: 17px;
+}
+
+.main__top>div {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.main__top>div>div {
+    width: 300px;
+    list-style: none;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--colorBack);
+    text-align: center;
+}
+
+.main__top--img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+
+.main__top>div>div:nth-child(2),
+.main__top>div>div:nth-child(3) {
+    flex-shrink: 1;
+    width: 130px;
+}
+
+/* Div no local */
+.main__topTESTE {
+    position: relative;
+}
+
+.main__top--select-p,
+#testes {
+    top: 77%;
+    right: 3%;
+    position: absolute;
+    text-align: left;
+    margin-left: 24px;
+    vertical-align: 40px;
+    text-align: 20px;
+    line-height: 2.8vh;
+}
+
+/* Esconde primeiro */
+.main__top--select-p{
+    display: none;
+    text-align: left;
+    margin-left: 24px;
+    vertical-align: 40px;
+    text-align: 20px;
+    line-height: 2.8vh;
+}
+
+/* Hover */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.main__top--select:hover {
+    background-color: var(--colorTextMain);
+    color: var(--colorDiv);
+}
+
+.main__top:hover>div>div #testes:nth-child(3) {
+    display: none;
+}
+
+#main__top--select1:hover>#main__top--select-p1 {
+    display: block;
+    color: var(--colorTextSect);
+}
+
+
+#main__top--select2:hover>#main__top--select-p2 {
+    display: block;
+    color: var(--colorTextSect);
+}
+
+#main__top--select3:hover>#main__top--select-p3 {
+    display: block;
+    color: var(--colorTextSect);
+}
+
+#main__top--select4:hover>#main__top--select-p4 {
+    display: block;
+    color: var(--colorTextSect);
+}
+/*Elementos*/
+.main__elemento--selection-marca{
+    width: 350px;
+    margin: 5px 0px 7px 0px;
+    padding: 10px;
+    border: 2px solid rgb(85, 85, 85, 0.2);
+    border-radius: 20px;
+    background-color: var(--colorDiv);
+    box-shadow: 0px 0.5px 1px rgb(85, 85, 85, 0.5);
+    color: var(--fontMain);
+}

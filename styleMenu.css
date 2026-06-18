@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /*Cores*/
+    --colorBack: rgb(244, 245, 247);
+    --colorMenu: rgb(220, 49, 46);
+    --colorDiv: rgb(255, 255, 255);
+    --colorTextMain: rgb(30, 30, 30);
+    --colorTextSect: rgb(85, 85, 85);
+    --colorFontSec: rgb(220, 49, 46);
+    --colorFontClear: white;
+    --colorBot: rgb(220, 49, 46);
+    --colorTest1: blue;
+    --colorTest2: red;
+    --colorTest3: green;
+    /*Fote*/
+    --fontMain: 'Montserrat', sans-serif;
+}
+
+.menu__default {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--colorMenu);
+    color: var(--colorFontClear);
+    position: fixed;
+    z-index: 9999;
+}
+
+
+.menu__default--nav {
+    background-color: var(--colorMenu);
+    width: 35px;
+    text-align: right;
+}
+
+.menu-icon {
+    font-size: 30px;
+}
+
+.menu__default--logo {
+    flex-grow: 1;
+    text-align: center;
+    line-height: -10px;
+    background-color: var(--colorMenu);
+}
+
+.menu__default--logo>img {
+    width: 120px;
+}
+
+.banner {
+    padding-top: 50px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(0, 0, 0, 0.8)), url(imagens/Fonte-reprodução-do-site-YouWheel-upscale-bmw-mb-audi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+footer{
+    background-color: var(--colorTextMain);
+    height: 90px;
+    color: var(--colorDiv);
+    padding: 20px;
+    display: flex;
+}
+.menu__default--logo-footer{
+    flex-grow: 1;
+    text-align: left;
+    line-height: -10px;
+    
+    }
+.menu__default--logo-footer>img {
+    width: 120px;
+}
