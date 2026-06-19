@@ -52,13 +52,25 @@
 }
 
 .banner {
-    padding-top: 50px;
-    height: 100%;
+    min-height: 100px;
+    width: 100%;
     background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(0, 0, 0, 0.8)), url(imagens/Fonte-reprodução-do-site-YouWheel-upscale-bmw-mb-audi.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.banner >h3{
+    text-align: center; 
+    color: white; 
+    white-space: nowrap;
+    font-size: 1em;
+}
+
+
+
 footer{
     background-color: var(--colorTextMain);
     height: 90px;
