@@ -162,10 +162,10 @@ html {
     line-height: 2.8vh;
 }
 .elemento__explanation::after{
-    content: "385px";
+    content: "385-400px";
 }
 }
-@media (min-width: 400px) and (max-width:440px){
+@media (min-width: 400px) and (max-width:480px){
     .main__top--select-p, #testes {
     top: 77%;
     right: 3%;
@@ -177,12 +177,12 @@ html {
     line-height: 2.8vh;
 }
 .elemento__explanation::after{
-    content: "400px";
+    content: "400-480px";
 }
 }
-@media (min-width: 370px) and (max-width:385px){
+@media (min-width: 370px) and (max-width:375px){
     .main__top--select-p, #testes {
-    top: 115%;
+    top: 110%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -192,6 +192,21 @@ html {
     line-height: 2.8vh;
 }
 .elemento__explanation::after{
-    content: "370px";
+    content: "370-375px";
+}
+}
+@media (min-width: 375px) and (max-width:385px){
+    .main__top--select-p, #testes {
+    top: 113%;
+    right: 3%;
+    position: absolute;
+    text-align: left;
+    margin-left: 24px;
+    vertical-align: 40px;
+    text-align: 20px;
+    line-height: 2.8vh;
+}
+.elemento__explanation::after{
+    content: "375-385px";
 }
 }
