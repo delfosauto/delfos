@@ -152,7 +152,7 @@ html {
 
 @media (min-width: 385px) and (max-width:400px){
     .main__top--select-p, #testes {
-    top: 125%;
+    top: 105%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -197,7 +197,7 @@ html {
 }
 @media (min-width: 375px) and (max-width:385px){
     .main__top--select-p, #testes {
-    top: 147%;
+    top: 140%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -213,7 +213,7 @@ html {
 
 @media (min-width: 355px) and (max-width:370px){
     .main__top--select-p, #testes {
-    top: 113%;
+    top: 83%;
     right: 3%;
     position: absolute;
     text-align: left;
