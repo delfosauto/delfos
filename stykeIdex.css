@@ -152,7 +152,7 @@ html {
 
 @media (min-width: 385px) and (max-width:400px){
     .main__top--select-p, #testes {
-    top: 105%;
+    top: 108%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -161,9 +161,7 @@ html {
     text-align: 20px;
     line-height: 2.8vh;
 }
-.elemento__explanation::after{
-    content: "385-400px";
-}
+
 }
 @media (min-width: 400px) and (max-width:680px){
     .main__top--select-p, #testes {
@@ -176,9 +174,7 @@ html {
     text-align: 20px;
     line-height: 2.8vh;
 }
-.elemento__explanation::after{
-    content: "400-480px";
-}
+
 }
 @media (min-width: 370px) and (max-width:375px){
     .main__top--select-p, #testes {
@@ -191,9 +187,7 @@ html {
     text-align: 20px;
     line-height: 2.8vh;
 }
-.elemento__explanation::after{
-    content: "370-375px";
-}
+
 }
 @media (min-width: 375px) and (max-width:385px){
     .main__top--select-p, #testes {
@@ -206,14 +200,12 @@ html {
     text-align: 20px;
     line-height: 2.8vh;
 }
-.elemento__explanation::after{
-    content: "375-385px";
-}
+
 }
 
 @media (min-width: 355px) and (max-width:370px){
     .main__top--select-p, #testes {
-    top: 113%;
+    top: 115%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -222,7 +214,5 @@ html {
     text-align: 20px;
     line-height: 2.8vh;
 }
-.elemento__explanation::after{
-    content: "355-370px";
-}
+
 }
