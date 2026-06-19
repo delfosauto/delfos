@@ -150,7 +150,7 @@ html {
     color: var(--fontMain);
 }
 
-@media (min-width: 380px) and (max-width:392px){
+@media (min-width: 385px) and (max-width:400px){
     .main__top--select-p, #testes {
     top: 90%;
     right: 3%;
@@ -174,9 +174,9 @@ html {
     line-height: 2.8vh;
 }
 }
-@media (min-width: 370px) and (max-width:390px){
+@media (min-width: 370px) and (max-width:385px){
     .main__top--select-p, #testes {
-    top: 120%;
+    top: 115%;
     right: 3%;
     position: absolute;
     text-align: left;
