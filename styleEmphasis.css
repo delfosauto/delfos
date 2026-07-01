@@ -64,14 +64,14 @@ figure {
 
 .informar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/*Afastamento entre si*/
     color: var(--colorFontPri);
     padding-top: 20px;
     font-family: "Passion One", sans-serif;
     color: var(--colorFontCinza);
     font-weight: 400;
     flex-shrink: 1;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*Quebra linha*/
     font-size: 17px;
 }
 
