@@ -77,6 +77,7 @@ footer{
     color: var(--colorDiv);
     padding: 20px;
     display: flex;
+    justify-content: space-between;
 }
 .menu__default--logo-footer{
     flex-grow: 1;
