@@ -231,7 +231,7 @@ html {
 
 @media (min-width: 1010px) {
     .main__top--select-p, #testes {
-    top: 150%;
+    top: 100%;
     right: 3%;
     position: absolute;
     text-align: left;
