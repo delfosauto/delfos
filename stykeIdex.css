@@ -227,7 +227,11 @@ html {
     vertical-align: 40px;
     text-align: 20px;
     line-height: 2.8vh;
-}}
+    }
+    .banner::after{
+    content: "680-1010";
+    }
+}
 
 @media (min-width: 1010px) {
     .main__top--select-p, #testes {
@@ -239,4 +243,8 @@ html {
     vertical-align: 40px;
     text-align: 20px;
     line-height: 2.8vh;
-}}
+    }
+    .banner::after{
+    content: "1010";
+    }
+}
