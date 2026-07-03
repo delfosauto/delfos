@@ -99,8 +99,8 @@ h1 {
     text-align: left;
     margin-left: 24px;
     vertical-align: 40px;
-    text-align: 20px;
     line-height: 2.8vh;
+    font-size: 20px;
 }
 
 /* Hover */
@@ -219,7 +219,7 @@ html {
 
 @media (min-width: 680px) and (max-width:1010px){
     .main__top--select-p, #testes {
-    top: 80%;
+    top: 70%;
     right: 3%;
     position: absolute;
     text-align: left;
@@ -235,14 +235,14 @@ html {
 
 @media (min-width: 1010px) {
     .main__top--select-p, #testes {
-    top: 125%;
+    top: 160%;
     right: 3%;
     position: absolute;
     text-align: left;
     margin-left: 24px;
     vertical-align: 40px;
     text-align: 20px;
-    line-height: 2.8vh;
+    line-height: 5vh;
     }
     .banner::after{
     content: "1010";
