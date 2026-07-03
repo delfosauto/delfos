@@ -92,7 +92,34 @@ h1 {
 .main__topTESTE {
     position: relative;
 }
+/*Section 2*/
+#ServFrete{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to top, rgba(128,128,128,0.5),rgba(0,0,0,0.8)), url(imagens/transporteRodagem.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
 
+}
+#ServFrete >h1,h4 {
+    text-align: right; 
+    color: white; 
+    padding-right: 20px;
+}
+
+.subtitulos{
+    width: 360px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 2.5vh;
+}
+
+
+
+/* Hover */
 
 
 /* Esconde primeiro */
@@ -104,8 +131,6 @@ h1 {
     line-height: 2.8vh;
     font-size: 20px;
 }
-
-/* Hover */
 html {
     scroll-behavior: smooth;
 }
@@ -154,6 +179,8 @@ html {
 }
 
 /*Media query*/
+
+/*Iphone 15 pro, Redmi Note 11 Pro 5G - viewport 393 x 852 px*/
 @media (min-width: 385px) and (max-width:400px) {
 
     .main__top--select-p,
@@ -168,7 +195,7 @@ html {
         line-height: 2.8vh;
     }
     .banner::after {
-        content: "385-400";
+        content: "385";
     }
 
 }
@@ -187,7 +214,7 @@ html {
         line-height: 2.8vh;
     }
     .banner::after {
-        content: "400-680";
+        content: "400";
     }
 
 }
@@ -206,11 +233,11 @@ html {
         line-height: 2.8vh;
     }
     .banner::after {
-        content: "370-375";
+        content: "370";
     }
 
 }
-/*Iphone 8*/
+/*Iphone 8, 375 x 667 px*/
 @media (min-width: 375px) and (max-width:385px) {
 
     .main__top--select-p,
@@ -225,11 +252,11 @@ html {
         line-height: 3.5vh;
     }
     .banner::after {
-        content: "375-385";
+        content: "375";
     }
 
 }
-
+/*Doogee S96 Pro, viewport 360*/
 @media (min-width: 355px) and (max-width:370px) {
 
     .main__top--select-p,
@@ -245,11 +272,11 @@ html {
     }
 
     .banner::after {
-        content: "355-370";
+        content: "355";
     }
 
 }
-/*Tablet*/
+/*Tablet , viewport (Paisagem): 960 x 600 px, (Retrato): 600 x 960 px*/
 @media (min-width: 680px) and (max-width:1010px) {
 
     .main__top--select-p,
@@ -269,7 +296,7 @@ html {
     }
 
     .banner::after {
-        content: "680-1010 rev1";
+        content: "680";
     }
 }
 
@@ -284,7 +311,7 @@ html {
         margin-left: 24px;
         vertical-align: 40px;
         text-align: 20px;
-        line-height: 5vh;
+        line-height: 2.8vh;
     }
 
     .banner::after {
