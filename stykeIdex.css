@@ -95,15 +95,16 @@ h1 {
 /*Section 2*/
 #ServFrete{
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-image: linear-gradient(to top, rgba(128,128,128,0.5),rgba(0,0,0,0.8)), url(imagens/transporteRodagem.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-size: auto;
+    background-attachment: fixed;
     
     
 
 }
-#ServFrete >h1,h4 {
+#ServFrete >h1,h3 {
     text-align: right; 
     color: white; 
     padding-right: 20px;
@@ -114,7 +115,7 @@ h1 {
     margin: 0 auto;
     text-align: left;
     font-size: 20px;
-    line-height: 2.5vh;
+    line-height: 3.5vh;
 }
 
 
