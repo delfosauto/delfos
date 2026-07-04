@@ -113,13 +113,12 @@ h1 {
     height: 300px;
     width: 350px;
     margin-left: 20px;
+    padding-top: 30px;
 }
 
 .subtitulos{
     display: flex;
     margin-left: 20px;
-    align-items: center;
-    border: solid 1px green;
 }
 .subtitulos >a{
     color: white;
