@@ -93,7 +93,7 @@ h1 {
     position: relative;
 }
 /*Section 2*/
-#frete{
+.main_middle{
     width: 100%;
     height: 500px;
     background-image: linear-gradient(to top, rgba(128,128,128,0.5),rgba(0,0,0,0.8)), url(imagens/transporteRodagem.jpg);
@@ -101,20 +101,34 @@ h1 {
     background-size: cover;   
     background-repeat: no-repeat;
     padding-right: 15px;
-
-
+    border: solid 1px red;
+    
 }
-#frete >div>h1,h3 {
-    text-align: right; 
+.main_middle >div>h1,h3 {
+    font-family: var(--fontMain);
     color: white; 
     padding: 0px;
+    padding-top: 10px;
+}
+#ServFrete{
+    height: 300px;
+    width: 350px;
+    margin-left: 20px;
 }
 
-.subtitulos >button{
+.subtitulos{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    border: solid 1px green;
+}
+.subtitulos >a{
     color: white;
     background-color: var(--colorMenu);
     padding: 20px;
     font-family: var(--fontMain);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
