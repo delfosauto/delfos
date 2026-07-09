@@ -50,30 +50,32 @@ h1 {
     width: 360px;
     margin: 0 auto;
     text-align: center;
-}
-
-.main__top {
     font-size: 17px;
 }
-
 .main__top>div {
-    width: 300px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 350px;
     margin: 0 auto;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
 }
-
-.main__top>div>div {
-    width: 300px;
-    list-style: none;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 5px;
-    background-color: var(--colorBack);
-    text-align: center;
+.main__top--tableTd{
+width:150px;
+border-radius: 20px;
+padding: 5px;
 }
+.main__top--tableLine{
+ background-color:rgb(244, 245, 247);
+ text-align: center;
+ margin: 205px;
+} 
 
+.main__top--tableLineSelect{
+display:none;
+text-align: left;
+}
+.main__top--tableLineSelectTd{
+    padding-top: 35px;
+}
 .main__top--img>img {
     width: 100%;
     height: 100%;
@@ -81,20 +83,9 @@ h1 {
     border-radius: 70px;
 }
 
-
-.main__top>div>div:nth-child(2),
-.main__top>div>div:nth-child(3) {
-    flex-shrink: 1;
-    width: 130px;
-}
-
-/* Div no local */
-.main__topTESTE {
-    position: relative;
-}
 /*Section 2*/
 .main_middle{
-    width: 100%;
+    
     height: 500px;
     background-image: linear-gradient(to top, rgba(128,128,128,0.5),rgba(0,0,0,0.8)), url(imagens/transporteRodagem.jpg);
     background-position: top;
@@ -116,6 +107,7 @@ h1 {
     padding-top: 30px;
 }
 
+
 .subtitulos{
     display: flex;
     margin-left: 20px;
@@ -128,55 +120,36 @@ h1 {
     text-decoration: none;
     font-weight: 600;
 }
+/* links */
 
-
-
-
-/* Hover */
-
-
-/* Esconde primeiro */
-.main__top--select-p {
-    display: none;
-    text-align: left;
-    margin-left: 24px;
-    vertical-align: 40px;
-    line-height: 2.8vh;
-    font-size: 20px;
-}
 html {
     scroll-behavior: smooth;
 }
 
-
-.main__top--select:hover {
-    background-color: var(--colorTextMain);
-    color: var(--colorDiv);
+/* Hover */
+#t1:hover{
+ background: rgb(30,30,30,30);
+ color: rgb(255,255,255,255);}
+#t2:hover{
+ background: rgb(30,30,30,30);
+ color: rgb(255,255,255,255);}
+#t3:hover{
+ background: rgb(30,30,30,30);
+ color: rgb(255,255,255,255);}
+#t4:hover{
+ background: rgb(30,30,30,30);
+ color: rgb(255,255,255,255);}
+#t1:hover ~ #l1, #l1:hover{
+display:table-row;
 }
-
-.main__top:hover>div>div #testes:nth-child(3) {
-    display: none;
+#t2:hover ~ #l2, #l2:hover{
+display:table-row;
 }
-
-#main__top--select1:hover>#main__top--select-p1 {
-    display: block;
-    color: var(--colorTextSect);
+#t3:hover ~ #l3, #l3:hover{
+display:table-row;
 }
-
-
-#main__top--select2:hover>#main__top--select-p2 {
-    display: block;
-    color: var(--colorTextSect);
-}
-
-#main__top--select3:hover>#main__top--select-p3 {
-    display: block;
-    color: var(--colorTextSect);
-}
-
-#main__top--select4:hover>#main__top--select-p4 {
-    display: block;
-    color: var(--colorTextSect);
+#t4:hover ~ #l4, #l4:hover{
+display:table-row;
 }
 
 /*Elementos*/
@@ -195,139 +168,22 @@ html {
 
 /*Iphone 15 pro, Redmi Note 11 Pro 5G - viewport 393 x 852 px*/
 @media (min-width: 385px) and (max-width:400px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 108%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-    }
-    .banner::after {
-        content: "385";
-    }
-
 }
-
+/**/
 @media (min-width: 400px) and (max-width:680px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 77%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-    }
-    .banner::after {
-        content: "400";
-    }
-
 }
-
+/**/
 @media (min-width: 370px) and (max-width:375px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 130%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-    }
-    .banner::after {
-        content: "370";
-    }
-
 }
 /*Iphone 8, 375 x 667 px*/
 @media (min-width: 375px) and (max-width:385px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 140%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 3.5vh;
-    }
-    .banner::after {
-        content: "375";
-    }
-
 }
 /*Doogee S96 Pro, viewport 360*/
 @media (min-width: 355px) and (max-width:370px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 115%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-    }
-
-    .banner::after {
-        content: "355";
-    }
-
 }
 /*Tablet , viewport (Paisagem): 960 x 600 px, (Retrato): 600 x 960 px*/
 @media (min-width: 680px) and (max-width:1010px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 70%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-        font-size: 20px;
-    }
-    .main__top--select{
-        font-size: 20px;
-    }
-
-    .banner::after {
-        content: "680";
-    }
 }
-
+/**/
 @media (min-width: 1010px) {
-
-    .main__top--select-p,
-    #testes {
-        top: 160%;
-        right: 3%;
-        position: absolute;
-        text-align: left;
-        margin-left: 24px;
-        vertical-align: 40px;
-        text-align: 20px;
-        line-height: 2.8vh;
-    }
-
-    .banner::after {
-        content: "1010";
-    }
 }
