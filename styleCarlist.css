@@ -9,14 +9,11 @@ html {
     height: 100vh;
 }
 
-.main__input--inf {
-    margin: 50px 0px 20px 20px;
-    width: 395px;
-}
+
 
 .main__first--img {
     position: relative;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -33,6 +30,7 @@ html {
 .main__first--img>div {
     display: flex;
     overflow: auto;
+    margin: 0 auto;
 }
 
 .slider-nav {
@@ -50,6 +48,10 @@ html {
     height: 0.8rem;
     background-color: white;
     border-radius: 50%;
+}
+.main__input--inf {
+    margin: 50px 0px 20px 0px;
+    width: 100%;
 }
 
 .main__input--inf-data {
