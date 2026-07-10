@@ -50,7 +50,7 @@
 .menu__default--logo>img {
     width: 120px;
 }
-
+/*
 .banner {
     min-height: 100px;
     width: 100%;
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 .banner >h3{
     text-align: center; 
     color: white; 

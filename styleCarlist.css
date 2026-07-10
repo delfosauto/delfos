@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main__first--img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.IdCarImge {
+    width: 395vw;
+    height: 25vh;
+    object-fit: cover;
+    object-position: center;
+    scroll-snap-align: start;
+    flex: 1 0 100%;
+}
+.main__first--img>div {
+    display: flex;
+    overflow: auto;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.75rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.slider-nav>a {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: white;
+    border-radius: 50%;
+}
