@@ -51,7 +51,7 @@ html {
 }
 .main__input--inf {
     margin: 50px 0px 20px 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 .main__input--inf-data {
@@ -64,11 +64,9 @@ html {
 }
 
 .main__input--inf>div {
-    max-width: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 100px;
-
     margin: 0 auto;
     place-items: center;
 }

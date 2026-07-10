@@ -1,9 +1,11 @@
 
 
 /*Add new photo */
-let elemento = document.querySelector("#IdCarImg");
-let IdLink =  localStorage.getItem("IdLink")
-elemento.src = "compras/"+IdLink+".jpg";
+let picture1 = document.querySelector("#IdCarImg1");
+let picture2 = document.querySelector("#IdCarImg2");
+let picture3 = document.querySelector("#IdCarImg3");
+let IdLink =  localStorage.getItem("IdLink");
+picture1.src = "compras/"+IdLink+".jpg";
 
 
 /*Save idCar on localStorege*/
