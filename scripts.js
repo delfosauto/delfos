@@ -26,6 +26,9 @@ const carros=[
 {	Idlink:	3163746	, origem:	"Alemanha"	, fabricante:	"BMW"	, modelo:	"118d F40"	, versão:	"M Sport"	, valor:	2000	, ano:	2020	, km:	230	, fuel:	"diesel"	, CV:	150	, CC:	1.995	, caixa:	"Automática"	},
 {	Idlink:	25221242	, origem:	"Alemanha"	, fabricante:	"BMW"	, modelo:	"116d F20"	, versão:	"Advance-Advantage"	, valor:	2900	, ano:	2017	, km:	80	, fuel:	"diesel"	, CV:	116	, CC:	1.498	, caixa:	"Manual"	}
 ]
+/*Outros*/
+
+
 /*Origin new photo */
 let picture1 = document.querySelector("#IdCarImg1");
 let picture2 = document.querySelector("#IdCarImg2");
@@ -75,4 +78,8 @@ function SalveIdCar(IdCar){
 event.preventDefault();
 localStorage.setItem("IdLink", IdCar.id);
 window.location.href = IdCar.href;
+}
+
+function pageBack() {
+    document.getElementById("BtmBack").href = "index.html#"+IdLink;
 }
