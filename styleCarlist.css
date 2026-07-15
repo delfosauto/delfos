@@ -20,7 +20,7 @@ html {
 
 .IdCarImge {
     width: 395vw;
-    height: 25vh;
+    height: 31vh;
     object-fit: cover;
     object-position: center;
     scroll-snap-align: start;
