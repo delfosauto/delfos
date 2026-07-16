@@ -6,7 +6,7 @@
 :root {
     /*Cores*/
     --colorBack: rgb(244, 245, 247);
-    --colorMenu: rgb(220, 49, 46);
+    --colorMenu: #dc312e;
     --colorDiv: rgb(255, 255, 255);
     --colorTextMain: rgb(30, 30, 30);
     --colorTextSect: rgb(85, 85, 85);
