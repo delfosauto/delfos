@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfos</title>
+    <!--Import materialize-->
+    <link rel="stylesheet" href="styleMenuUP.css">
+    <!-- <link rel="stylesheet" href="styleIndexKnows.css"> -->
+    <link rel="stylesheet" href="styleCorFonts.css">
+    <link rel="stylesheet" href="styleForm.css">
+    <script src="scriptUP.js" defer></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <header class="menu__default">
+        <nav>
+            <button onclick="opemenu()">
+                <span style="font-size: 30px;" class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+
+            <div class="headFoot--Company" id="menu">
+                <button onclick="ofmenu()"><span style="font-size: 30px;"
+                        class="material-symbols-outlined menu-icon">close</span></button>
+                <ul style="list-style: none;">
+                    <li><a href="indexUPGRADE.html">Página inicial</a></li>
+                    <li><a>Como funciona</a></li>
+                    <li><a>Comprar Viatura</a></li>
+                    <li><a>Investir em cotas</a></li>
+                    <li><a>Formulário Importar carro</a></li>
+                    <li><a>Perguntas frequentes</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu__default--logo">
+            <a href="indexUPGRADE.html"><img src="imagens/logo rev1.png" alt=""></a>
+            <p style=" margin-bottom: 0px;" class="">STAND CAR Importações</p>
+        </div>
+
+    </header>
+    <main>
+        <div style="height: 51px;">Faixa menu</div>
+        <div class="mascara" id="mascara" onclick="ofmenu()"></div>
+        <a id="BtmBack" onclick="pageBack()">
+            <span class="material-symbols-outlined menu-icon" style="font-size: 40px;">chevron_left</span>
+        </a>
+        <section class="Section__form--referencia">
+            <div class="contentlabel">
+                <h2><span id="namecar"></span><span id="modcar"></span> <span id="verscar"></span></h2>
+            </div>
+            <div><span class="contentlabel">Número de referencia:</span><span id="refeCar" class="contenttxt"></span>
+            </div>
+        </section>
+        <section class="Section__form">
+            <h2>Solicitar proposta</h2>
+            <form id="Section__form">
+                <input class="Section__form--input" type="text" id="nome" placeholder="Seu Nome" required>
+                <input class="Section__form--input" type="email" id="email" placeholder="Seu E-mail" required>
+                <div class="Section__form--input-tel">
+                    <select name="" id="">
+                        <option value="">+351</option>
+                        <option value="">+32</option>
+                        <option value="">+49</option>
+
+                    </select>
+                    <input type="tel" id="tele" placeholder="exemplo: 912 345 678" required maxlength="9"
+                        pattern="[0-9]{9}">
+                </div>
+
+                <div class="Section__form--check ">
+                    <div><input id="Section__form--check" type="checkbox"></div>
+                    <span class="contenttxt">Concordo com o processamento dos meus dados conforme descrito na
+                        <a>declaração de consentimento</a> da Delfos Stand Car. Posso revogar este consentimentoa
+                        qualquer momento, com efeito para o futuro. </span>
+                </div>
+
+                <button class="button__default button__default--buy" type="submit">Enviar Mensagem</button>
+            </form>
+
+            <p id="statusEnvio"></p>
+        </section>
+
+    </main>
+    <footer class="headFoot--Company foot__default">
+        <div class="">
+            <h2>Siga-nos</h2>
+
+            <p><svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fundo quadrado arredondado -->
+                    <rect x="2" y="2" width="20" height="20" rx="4" ry="4" fill="#1877F2" />
+                    <!-- Letra F -->
+                    <path d="M14 7h-1.5c-1.1 0-2 .9-2 2v2H9v3h1.5v4h3v-4H15v-3h-1.5V9h1.5V7z" fill="#FFFFFF" />
+                </svg>
+
+                <span>Facebook</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="red">
+                    <path
+                        d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.3 2.5 12 2.5 12 2.5h-.1s-5.3 0-8.7.3c-.4.1-1.2.1-2 1-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.4.3 7.4.3s5.3 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.7 14.6V7.9l6.4 3.4-6.4 3.3z" />
+                </svg>
+
+                <span>Youtube</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6.5-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
+                </svg>
+
+                <span>Instagram</span>
+            </p>
+            <h2>Serviço de apoio ao cliente</h2>
+            <p>Apoio ao Cliente: +351 210 000 000</p>
+            <p>(Seg a Sex: 09h - 18 h)</p>
+            <p>E-mail: contato@suaempresa.pt</p>
+            <p>Sede: Leiria, Portugal</p>
+            <h2>Sobre nós</h2>
+            <p>Políticas de Cookies</p>
+            <p>Políticas de Privacidade</p>
+            <p>Livro de Reclamações online</p>
+            <p>Resolução Alternativa de Litígios (RAL)</p>
+            <h2>Isenção de Responsabilidade / Nota Legal</h2>
+            <p>"Aviso Legal: Os rendimentos passados não garantem rentabilidades futuras. As estimativas de lucro
+                baseiam-se em análises do mercado automóvel nacional. Consulte sempre os Termos e Condições antes de
+                participar em qualquer oportunidade de investimento participado."</p>
+        </div>
+    </footer>
+</body>
+
+</html>

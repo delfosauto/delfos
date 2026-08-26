@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfos_Buy</title>
+    <!--Import materialize-->
+    <link rel="stylesheet" href="styleMenuUP.css">
+    <link rel="stylesheet" href="styleIndexKnows.css">
+    <link rel="stylesheet" href="styleListCar.css">
+    <link rel="stylesheet" href="styleCorFonts.css">
+    <script src="scriptUP.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header class="menu__default">
+        <nav>
+            <button onclick="opemenu()">
+                <span style="font-size: 30px;" class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+
+            <div class="headFoot--Company" id="menu">
+                <button onclick="ofmenu()"><span style="font-size: 30px;"
+                        class="material-symbols-outlined menu-icon">close</span></button>
+                <ul style="list-style: none;">
+                    <li><a href="indexUPGRADE.html">Página inicial</a></li>
+                    <li><a>Como funciona</a></li>
+                    <li><a>Comprar Viatura</a></li>
+                    <li><a>Investir em cotas</a></li>
+                    <li><a>Formulário Importar carro</a></li>
+                    <li><a>Perguntas frequentes</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="menu__default--logo">
+            <a href="indexUPGRADE.html"><img src="imagens/logo rev1.png" alt=""></a>
+            <p style=" margin-bottom: 0px;" class="">STAND CAR Importações</p>
+        </div>
+        <div>
+            <div class="menu__button--perfilInv As_buy">
+                <a onclick="typeCustomer(this)" data-customer="InvesCust" href=""
+                    class="button__Menu--default button__default--invest"><span>Seja um investidor</span></a>
+            </div>
+            <div class="menu__button--perfilBuy  As_Invest">
+                <a onclick="typeCustomer(this)" data-customer="buyCust" href=""
+                    class="button__Menu--default button__default--buy"><span>Quero comprar </span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div style="height: 51px;">Faixa menu</div>
+        <div class="mascara" id="mascara" onclick="ofmenu()"></div>
+        <div style="margin: 10px;">
+            <a href="indexUPGRADE.html"><span class="material-symbols-outlined">arrow_back_ios</span></a>
+        </div>
+
+        <section class="main__classificado section__elemento">
+
+            <select class="main__elemento--selection-marca As_buy">
+                <option>Marca</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Mercedes</option>
+                <option>Tesla</option>
+                <option>BYD</option>
+                <option>Porsche</option>
+            </select>
+            <select class="main__elemento--selection-marca As_buy">
+                <option>Modelo</option>
+            </select>
+            <select class="main__elemento--selection-marca As_buy">
+                <option>Combustível</option>
+                <option>Diesel</option>
+                <option>gasolina</option>
+                <option>híbrido</option>
+            </select>
+            <select class="main__elemento--selection-marca As_buy">
+                <option>Mais recentes</option>
+                <option>Mais barato</option>
+                <option>Mais novo</option>
+                <option>Menos kms</option>
+            </select>
+            <select class="main__elemento--selection-marca As_Invest">
+                <option>Filtrar por Valor</option>
+                <option>Valor cota até 500 €</option>
+                <option>Valor cota até 1000 €</option>
+                <option>Valor cota até 2000 €</option>
+                <option>Valor cota até 3000 €</option>
+            </select>
+            <select class="main__elemento--selection-marca As_Invest">
+                <option>Filtrar prazo de rendimento</option>
+                <option>Período 60 dias</option>
+                <option>Período 90 dias</option>
+            </select>
+            <select class="main__elemento--selection-marca As_Invest">
+                <option>Ordenar por valor de cota</option>
+                <option>ordem Crescente</option>
+                <option>ordem Decrescente</option>
+            </select>
+            <div class="main__seach">
+                <div>
+                    <a class="button__default--seach button__default--basic "><span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <spam> Buscar</spam>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main__section--Title">
+            <h2 id="sectioTitleSeach" class="section--Company2"></h2>
+        </div>
+
+        <section class="main__classificado" id="main__classificado">
+
+            <div class="main__classificado--bloco" id="174497">
+                <div class="" style="position: relative;">
+                    <figure>
+                        <img src="compras/174497.png" alt="174497" title="174497">
+                    </figure>
+                    <div class="selo As_buy">
+                        <div class="selolin">
+                            <div class="selo2"></div>
+                            <div class="selo3">
+                                <span style="font-size: 11px;">Econômia</span>
+                                <span style="font-size: 18px;">de 8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stick As_Invest">
+                        <div class="sticklin">
+                            <div class="stick2"></div>
+                            <div class="stick3">
+                                <div><span style="font-size: 11px;">*Até</span></div>
+                                <div><span style="font-size: 18px;">1050€</span></div>
+                                <div><span style="font-size: 11px;">de Retorno</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__classificado--tit">
+                    <h2 class="As_buy">Audi A3 Sportback Attraction</h2>
+                    <h3 class="As_Invest">Audi A3 Sportback Attraction</h3>
+                </div>
+                <div class="main__classificado--price">
+                    <div class="As_buy">
+                        <div><span class="section--Txt" style="margin-right: 10px;">Mercado Nacional:</span><span
+                                class="section--Labe main__classificado--priceNac">12 990 €</span></div>
+                        <div><span class="section--Company2" style="margin-right: 10px;">Importação:</span><span
+                                class="section--Company2 Focus_txt--buy">11 940 €</span></div>
+                    </div>
+                    <div class="main__classificado--priceInvest section--Company2 As_Invest">
+                        <span class="" style="margin-right: 10px;">Cota mínima:</span><span
+                            class="Focus_txt--invest">1492 €</span><span> | em </span><span class="Focus_txt--invest">60
+                            dias</span>
+                    </div>
+                </div>
+                <div class="main__classificado--informar">
+                    <div><span class="material-symbols-outlined section--Txt">
+                            calendar_month
+                        </span> <span class="section--Labe">2017</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined section--Txt">pin_road_2</span>
+                        <span class="section--Labe">180 mil</span>
+                    </div>
+                    <div><span class="material-symbols-outlined section--Txt">
+                            local_gas_station</span><span class="section--Labe">Diesel</span>
+                    </div>
+
+                </div>
+                <div class="main__classificado--made">
+                    <div><span class="section--Txt" style="margin-right: 10px;">Origem:</span><span
+                            class="section--Labe">Alemanha</span></div>
+                    <a class="button__default button__default--buy As_buy" onclick="TypeIdCar(this)"
+                        data-idlink="174497" href="cardcar.html">Ver detalhes</a>
+                    <a class="button__default button__default--invest As_Invest" onclick="TypeIdCar(this)"
+                        data-idlink="174497" href="cardcar.html"><span class="add_cart_btn">Garantir Cotas</span></a>
+                </div>
+            </div>
+
+            <div class="main__classificado--bloco" id="218943">
+                <div class="" style="position: relative;">
+                    <figure>
+                        <img src="compras/218943.png" alt="218943" title="218943">
+                    </figure>
+                    <div class="selo As_buy">
+                        <div class="selolin">
+                            <div class="selo2"></div>
+                            <div class="selo3">
+                                <span style="font-size: 11px;">Econômia</span>
+                                <span style="font-size: 18px;">de 19%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stick As_Invest">
+                        <div class="sticklin">
+                            <div class="stick2"></div>
+                            <div class="stick3">
+                                <div><span style="font-size: 11px;">*Até</span></div>
+                                <div><span style="font-size: 18px;">1425€</span></div>
+                                <div><span style="font-size: 11px;">de Retorno</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__classificado--tit">
+                    <h2 class="As_buy">Audi A3 Attraction</h2>
+                    <h3 class="As_Invest">Audi A3 Attraction</h3>
+                </div>
+                <div class="main__classificado--price">
+                    <div class="As_buy">
+                        <div><span class="section--Txt" style="margin-right: 10px;">Mercado Nacional:</span><span
+                                class="section--Labe main__classificado--priceNac">14 995 €</span></div>
+                        <div><span class="section--Company2" style="margin-right: 10px;">Importação:</span><span
+                                class="section--Company2 Focus_txt--buy">12 592 €</span></div>
+                    </div>
+                    <div class="main__classificado--priceInvest section--Company2 As_Invest">
+                        <span class="" style="margin-right: 10px;">Cota mínima:</span><span class="Focus_txt--invest">2
+                            425
+                            €</span><span> | em </span><span class="Focus_txt--invest">90 dias</span>
+                    </div>
+                </div>
+                <div class="main__classificado--informar">
+                    <div><span class="material-symbols-outlined section--Txt">
+                            calendar_month
+                        </span> <span class="section--Labe">2016</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined section--Txt">pin_road_2</span>
+                        <span class="section--Labe">179 mil</span>
+                    </div>
+                    <div><span class="material-symbols-outlined section--Txt">
+                            local_gas_station</span><span class="section--Labe">Diesel</span>
+                    </div>
+                </div>
+                <div class="main__classificado--made">
+                    <div><span class="section--Txt" style="margin-right: 10px;">Origem:</span><span
+                            class="section--Labe">Alemanha</span></div>
+                    <a class="button__default button__default--buy As_buy" onclick="TypeIdCar(this)"
+                        data-idlink="218943" href="cardcar.html">Ver detalhes</a>
+                    <a class="button__default button__default--invest As_Invest" onclick="TypeIdCar(this)"
+                        data-idlink="218943" href="cardcar.html"><span class="add_cart_btn">Garantir Cotas</span></a>
+                </div>
+            </div>
+
+            <div class="main__classificado--bloco" id="392117">
+                <div class="" style="position: relative;">
+                    <figure>
+                        <img src="compras/392117.png" alt="392117" title="392117">
+                    </figure>
+                    <div class="selo As_buy">
+                        <div class="selolin">
+                            <div class="selo2"></div>
+                            <div class="selo3">
+                                <span style="font-size: 11px;">Econômia</span>
+                                <span style="font-size: 18px;">de 8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stick As_Invest">
+                        <div class="sticklin">
+                            <div class="stick2"></div>
+                            <div class="stick3">
+                                <div><span style="font-size: 11px;">*Até</span></div>
+                                <div><span style="font-size: 18px;">830€</span></div>
+                                <div><span style="font-size: 11px;">de Retorno</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__classificado--tit">
+                    <h2 class="As_buy">BMW 118d F20</h2>
+                    <h3 class="As_Invest">BMW 118d F20</h3>
+                </div>
+                <div class="main__classificado--price">
+                    <div class="As_buy">
+                        <div><span class="section--Txt" style="margin-right: 10px;">Mercado Nacional:</span><span
+                                class="section--Labe main__classificado--priceNac">10 750 €</span></div>
+                        <div><span class="section--Company2" style="margin-right: 10px;">Importação:</span><span
+                                class="section--Company2 Focus_txt--buy">9 920 €</span></div>
+                    </div>
+                    <div class="main__classificado--priceInvest section--Company2 As_Invest">
+                        <span class="" style="margin-right: 10px;">Cota mínima:</span><span class="Focus_txt--invest">1653 €</span><span> | em </span><span class="Focus_txt--invest">60 dias</span>
+                    </div>
+                </div>
+                <div class="main__classificado--informar">
+                    <div><span class="material-symbols-outlined section--Txt">
+                            calendar_month
+                        </span> <span class="section--Labe">2012</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined section--Txt">pin_road_2</span>
+                        <span class="section--Labe">195 mil</span>
+                    </div>
+                    <div><span class="material-symbols-outlined section--Txt">
+                            local_gas_station</span><span class="section--Labe">Diesel</span>
+                    </div>
+
+                </div>
+                <div class="main__classificado--made">
+                    <div><span class="section--Txt" style="margin-right: 10px;">Origem:</span><span
+                            class="section--Labe">Alemanha</span></div>
+                    <a class="button__default button__default--buy As_buy" onclick="TypeIdCar(this)"
+                        data-idlink="392117" href="cardcar.html">Ver detalhes</a>
+                    <a class="button__default button__default--invest As_Invest" onclick="TypeIdCar(this)"
+                        data-idlink="392117" href="cardcar.html"><span class="add_cart_btn">Garantir
+                            Cotas</span></a>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+    <footer class="headFoot--Company foot__default">
+        <div class="">
+            <h2>Siga-nos</h2>
+
+            <p><svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fundo quadrado arredondado -->
+                    <rect x="2" y="2" width="20" height="20" rx="4" ry="4" fill="#1877F2" />
+                    <!-- Letra F -->
+                    <path d="M14 7h-1.5c-1.1 0-2 .9-2 2v2H9v3h1.5v4h3v-4H15v-3h-1.5V9h1.5V7z" fill="#FFFFFF" />
+                </svg>
+
+                <span>Facebook</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="red">
+                    <path
+                        d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.3 2.5 12 2.5 12 2.5h-.1s-5.3 0-8.7.3c-.4.1-1.2.1-2 1-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.4.3 7.4.3s5.3 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.7 14.6V7.9l6.4 3.4-6.4 3.3z" />
+                </svg>
+
+                <span>Youtube</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6.5-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
+                </svg>
+
+                <span>Instagram</span>
+            </p>
+            <h2>Serviço de apoio ao cliente</h2>
+            <p>Apoio ao Cliente: +351 210 000 000</p>
+            <p>(Seg a Sex: 09h - 18 h)</p>
+            <p>E-mail: contato@suaempresa.pt</p>
+            <p>Sede: Leiria, Portugal</p>
+            <h2>Sobre nós</h2>
+            <p>Políticas de Cookies</p>
+            <p>Políticas de Privacidade</p>
+            <p>Livro de Reclamações online</p>
+            <p>Resolução Alternativa de Litígios (RAL)</p>
+            <h2>Isenção de Responsabilidade / Nota Legal</h2>
+            <p>"Aviso Legal: Os rendimentos passados não garantem rentabilidades futuras. As estimativas de lucro
+                baseiam-se em análises do mercado automóvel nacional. Consulte sempre os Termos e Condições antes de
+                participar em qualquer oportunidade de investimento participado."</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

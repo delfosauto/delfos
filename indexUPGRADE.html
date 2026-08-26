@@ -1,0 +1,317 @@
+<DOCTYPE html>
+    <html lang="PT-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delfos</title>
+        <!--Import materialize-->
+        <link rel="stylesheet" href="styleMenuUP.css">
+        <link rel="stylesheet" href="styleIndexKnows.css">
+        <link rel="stylesheet" href="styleCorFonts.css">
+        <script src="scriptUP.js" defer></script>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body>
+        <header class="menu__default">
+            <nav>
+                <button onclick="opemenu()">
+                    <span style="font-size: 30px;" class="material-symbols-outlined menu-icon">menu</span>
+                </button>
+
+                <div class="headFoot--Company" id="menu">
+                    <button onclick="ofmenu()"><span style="font-size: 30px;"
+                            class="material-symbols-outlined menu-icon">close</span></button>
+                    <ul style="list-style: none;">
+                        <li><a>Página inicial</a></li>
+                        <li><a>Como funciona</a></li>
+                        <li><a>Comprar Viatura</a></li>
+                        <li><a>Investir em cotas</a></li>
+                        <li><a>Formulário Importar carro</a></li>
+                        <li><a>Perguntas frequentes</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu__default--logo">
+                <a href="indexUPGRADE.html"><img src="imagens/logo rev1.png" alt="" ></a>
+                <p style=" margin-bottom: 0px;" class="">STAND CAR Importações</p>
+            </div>
+
+        </header>
+
+        <main>
+            <div style="height: 51px;">Faixa menu</div>
+            <div class="mascara" id="mascara" onclick="ofmenu()"></div>
+            <section>
+                <article>
+                    <div class="hero__secction  hero__secction--buy">
+                        <div class="hero__secction--subdiv">
+                            <div>
+                                <p class="section--Company1" style="margin-bottom: 8px;">Importar carro para sí</p>
+                                <p class="Subtitle--section">Importe o sua viatura com <span class="Hero_textDestaq">até 30%</span> de poupança face ao
+                                    mercado nacional.
+                                    Tratamos de todo o processo com entrega chave na mão.</p>
+                            </div>
+                            <div class="Hero__button--default">
+                                <a onclick="typeCustomer(this)" data-customer="buyCust" href="listcarbuy.html" class="button__default button__default--buy ">Carros Selecionados</a>
+                                <a href="#LineBuy" class="button__default button__default--more ">Como
+                                    Funciona</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="hero__secction hero__secction--invest">
+                        <div style="text-align: right;" class="hero__secction--subdiv">
+                            <div>
+                                <p class="section--Company1" style="margin-bottom: 8px;">Importação para investimento
+                                </p>
+                                <p class="Subtitle--section">Ponha a sua poupança a render. <br><span class="Hero_textDestaqInvs">Rentabilidade superior</span>
+                                    aos bancos, prazos de 60 e 90 dias e processo 100% transparente.
+                                    <br> Invista em cotas de viaturas sem complicação.
+                                </p>
+                            </div>
+                            <div class="Hero__button--default">
+                                <a onclick="typeCustomer(this)" data-customer="InvesCust" href="listcarbuy.html" class="button__default button__default--invest ">Ver Oportunidades</a>
+                                <a href="#LineInvest" class="button__default button__default--more ">Como
+                                    Funciona</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="Hero__div--destaq">
+                    <h2>Viaturas em destaque</h2>
+                    <a onclick="onchoise()">Ver todos</a>
+                </div>
+                <div class="Hero__div--seach" id="seach">
+                    <div><h3 >Buscar como:</h3></div>
+                    <div>
+                        <a onclick="typeCustomer(this)" data-customer="buyCust" href="listcarbuy.html" class="button__default button__default--buy ">Comprador</a>
+                        <a onclick="typeCustomer(this)" data-customer="InvesCust" href="listcarbuy.html" class="button__default button__default--invest">Investidor</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero__section--slide">
+
+                <article class="hero__article--slide">
+                    <div>
+                        <img src="compras/174497.png" alt="">
+                    </div>
+                    <div>
+                        <span class="Hero__slide--informarName">Audi A3 Sportback Attraction</span>
+                        <div class="Hero__slide--informarTag">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>2017</span>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">pin_road_2</span>
+                                <span>180 mil</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero__article--slide">
+                    <div>
+                        <img src="compras/17744677.png" alt="">
+                    </div>
+                    <div>
+                        <span class="Hero__slide--informarName">Audi A3 Sportback Attraction</span>
+                        <div class="Hero__slide--informarTag">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>2017</span>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">pin_road_2</span>
+                                <span>180 mil</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero__article--slide">
+                    <div>
+                        <img src="compras/392117.png" alt="">
+                    </div>
+                    <div>
+                        <span class="Hero__slide--informarName">Audi A3 Sportback Attraction</span>
+                        <div class="Hero__slide--informarTag">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>2017</span>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">pin_road_2</span>
+                                <span>180 mil</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <div class="line--horiztone" id="LineBuy"></div>
+            <section class="secction__moreBuy" id="MoreKnowBuy">
+                <div><img class="secction__more--img" src="imagens/MoreKnowBuy.png" alt=""></div>
+                <h2 class="section--Title">Como funciona a importação passo a passo</h2>
+                <div>
+                    <article class="article__moreBuy  article__moreBuy1">
+                        <div><span style="font-size: 30px;" class="material-symbols-outlined menu-icon">search</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Escolha a viatura</h3>
+                            <p class="section--Label">Escolha nos nossos destaques ou solicite uma simulação gratuita
+                                para a viatura que
+                                procura.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreBuy article__moreBuy2">
+                        <div style="border: 1.5px solid #ff5200; border-radius: 20px;padding: 4px;"><span
+                                style="font-size: 30px;" class="material-symbols-outlined menu-icon">thumb_up</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Aceite da proposta</h3>
+                            <p class="section--Label">Receba a minuta do contrato para análise e aprovação formal,
+                                garantindo total segurança jurídica no processo.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreBuy article__moreBuy3">
+                        <div>
+
+                            <span style="font-size: 35px;" class="material-symbols-outlined menu-icon">map_search</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Transporte e Rastreamento</h3>
+                            <p class="section--Label">A viatura é inspecionada na origem e transportada com seguro.
+                                E tenha acesso o estado e a localização do transporte.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreBuy article__moreBuy4">
+                        <div><span style="font-size: 35px;" class="material-symbols-outlined menu-icon">key</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Legalização & Entrega chave na mão</h3>
+                            <p class="section--Label">Tratamos do IMT, matrículas e impostos. Recebe a viatura pronta a
+                                circular à sua porta.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="More__button--default">
+                <a onclick="typeCustomer(this)" data-customer="buyCust" href="listcarbuy.html" class="button__default button__default--buy ">Carros Selecionados</a>
+                <a href="" class="button__default--ask">Pedir Simulação</a>
+            </div>
+            <div class="line--horiztone" id="LineInvest"></div>
+            <section class="secction__moreInvest" id="MoreKnowInvest">
+
+                <div><img class="secction__more--img" src="imagens/MoreKnowInvestBackRev3.png" alt=""></div>
+                <h2>Descubra como funciona o nosso modelo de cotas com potencial de retorno</h2>
+                <div>
+                    <article class="article__moreInvest">
+                        <div><span style="font-size: 40px;" class="material-symbols-outlined menu-icon">no_crash</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Escolha a Viatura e as Cotas</h3>
+                            <p class="section--Label">Selecione uma das oportunidades disponíveis e defina quantas cotas
+                                pretende adquirir, de acordo com o seu orçamento.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreInvest">
+                        <div class="article__moreInvest--DivCicle"><span
+                                style="font-size: 30px;" class="material-symbols-outlined menu-icon">thumb_up</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Reserva e Contrato</h3>
+                            <p class="section--Label">Aprove o contrato e reserve o seu lugar. A rodada é confirmada
+                                assim que a meta de investidores for alcançada.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreInvest">
+                        <div><span style="font-size: 40px;"
+                                class="material-symbols-outlined menu-icon">calendar_month</span></div>
+                        <div class="article__moreBuy--div">
+                            <h3>Período de Rendimento</h3>
+                            <p class="section--Label">O seu investimento tem um prazo fixo de 60 ou 90 dias. O retorno é
+                                garantido e não depende da venda do veículo.</p>
+                        </div>
+                    </article>
+                    <article class="article__moreInvest">
+                        <div><span style="font-size: 40px;" class="material-symbols-outlined menu-icon">local_atm</span>
+                        </div>
+                        <div class="article__moreBuy--div">
+                            <h3>Receba o Capital + Rendimento</h3>
+                            <p class="section--Label">Concluído o prazo, o valor aplicado e o rendimento são creditados
+                                diretamente na sua conta bancária.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="More__button--default">
+                <a onclick="typeCustomer(this)" data-customer="InvesCust" href="listcarbuy.html" class="button__default button__default--invest">Ver Oportunidades</a>
+            </div>
+            <div class="line--horiztone"></div>
+            <section>
+                <div class="secction__socialvalid--ask">
+                    <h2 class="section--Title">Dúvidas</h2>
+                    <p class="section--Label">Estamos prontos para o ajudar a importar a sua próxima viatura ou
+                        rentabilizar o seu capital</p>
+                    <a class="section--Label" href="">
+                        Perguntas frequentes
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="headFoot--Company foot__default">
+            <div class="">
+                <h2>Siga-nos</h2>
+
+                <p><svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fundo quadrado arredondado -->
+                        <rect x="2" y="2" width="20" height="20" rx="4" ry="4" fill="#1877F2" />
+                        <!-- Letra F -->
+                        <path d="M14 7h-1.5c-1.1 0-2 .9-2 2v2H9v3h1.5v4h3v-4H15v-3h-1.5V9h1.5V7z" fill="#FFFFFF" />
+                    </svg>
+
+                    <span>Facebook</span>
+                </p>
+                <p><svg width="15" height="15" viewBox="0 0 24 24" fill="red">
+                        <path
+                            d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.3 2.5 12 2.5 12 2.5h-.1s-5.3 0-8.7.3c-.4.1-1.2.1-2 1-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.4.3 7.4.3s5.3 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.7 14.6V7.9l6.4 3.4-6.4 3.3z" />
+                    </svg>
+
+                    <span>Youtube</span>
+                </p>
+                <p><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6.5-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
+                    </svg>
+
+                    <span>Instagram</span>
+                </p>
+                <h2>Serviço de apoio ao cliente</h2>
+                <p>Apoio ao Cliente: +351 210 000 000</p>
+                <p>(Seg a Sex: 09h - 18 h)</p>
+                <p>E-mail: contato@suaempresa.pt</p>
+                <p>Sede: Leiria, Portugal</p>
+                <h2>Sobre nós</h2>
+                <p>Políticas de Cookies</p>
+                <p>Políticas de Privacidade</p>
+                <p>Livro de Reclamações online</p>
+                <p>Resolução Alternativa de Litígios (RAL)</p>
+                <h2>Isenção de Responsabilidade / Nota Legal</h2>
+                <p>"Aviso Legal: Os rendimentos passados não garantem rentabilidades futuras. As estimativas de lucro
+                    baseiam-se em análises do mercado automóvel nacional. Consulte sempre os Termos e Condições antes de
+                    participar em qualquer oportunidade de investimento participado."</p>
+            </div>
+        </footer>
+    </body>
+
+
+    </html>

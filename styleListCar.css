@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Config global */
+a {
+    text-decoration: none;
+    color: inherit;
+    /* color: var(--EmphasysWhite); */
+}
+
+/* Imagens */
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.selo_default {
+    position: absolute;
+    display: grid;
+    width: 100px;
+    height: 40px;
+    border: 1.1px solid var(--EmphasysWhite);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    left: 2%;
+    top: 10px;
+
+}
+
+.selo {
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    max-width: 107px;
+    height: 46px;
+    border: 1px solid black;
+    margin: 0 auto;
+    /* background-color: var(--FocusBuy); */
+    background-image: linear-gradient(90deg, var(--FocusBuy), var(--Emprasy__Active--Buy));
+    border-radius: 23px 10px 10px 23px;
+    color: var(--EmphasysWhite);
+}
+
+.selolin {
+    max-width: 93px;
+    height: 35px;
+    border: 1.2px dashed var(--EmphasysWhite);
+    display: flex;
+    border-radius: 17px 10px 10px 17px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 23px 10px 10px 23px;
+    text-align: center;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.selo2 {
+    width: 20px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: 5px;
+    position: relative;
+    background-color: var(--EmphasysWhite);
+}
+
+.selo2::after {
+    font-family: 'Material Symbols Outlined';
+    content: "\e155";
+    font-size: 30px;
+    position: absolute;
+    left: -25px;
+    bottom: -10px;
+    color: var(--PrimaryCompanyActive);
+}
+
+.selo3 {
+    padding: 0px 4px 3px 4px;
+}
+
+.stick {
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 83px;
+    height: 83px;
+    background-image: linear-gradient(90deg, rgb(6, 95, 70), rgb(0, 200, 83));
+    /* background-color: var(--FocusInvest); */
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+.sticklin {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 1px;
+    margin-left: 1.5px;
+    width: 78px;
+    height: 78px;
+    border: 1.2px dashed var(--EmphasysWhite);
+    border-radius: 50px 50px 50px 50px;
+}
+
+.stick2 {
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--EmphasysWhite);
+}
+
+.stick3 {
+    position: absolute;
+    height: 55px;
+    text-align: center;
+    color: var(--EmphasysWhite);
+    font-weight: 500;
+    line-height: 15px;
+
+}
+
+/* Section Top */
+.main__section--Title {
+    margin: 20px;
+
+}
+
+.main__classificado--top {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main__classificado--top>div {
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.main__seach {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.main__seach>div:nth-child(1) {
+    margin-bottom: 16px;
+}
+
+/*Elementos*/
+.main__elemento--selection-marca {
+    width: 350px;
+    margin: 5px 0px 7px 0px;
+    padding: 10px;
+    border: 2px solid var(--ContentLabel);
+    border-radius: 10px;
+    background-color: var(--SectionBack);
+    box-shadow: 0px 0.5px 1px rgb(85, 85, 85, 0.5);
+    color: var(--ContentLabel);
+    font-size: 18px;
+}
+
+/*  */
+.main__classificado {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main__classificado--priceNac {
+    text-decoration: line-through;
+    color: var(--ContentTxt);
+}
+
+.main__classificado--priceInvest {
+    margin-bottom: 3px;
+    margin-top: 2px;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--novoverdeActive);
+}
+
+.main__classificado>a {
+    text-decoration: none;
+    color: black;
+}
+
+.section__elemento {
+    background-color: var(--SectionDiv);
+    padding: 20px 0px 20px 0px;
+}
+
+/* Section Card */
+
+.main__classificado--informar {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.main__classificado--bloco {
+    margin: 0 auto;
+    width: 80%;
+    flex-grow: 0;
+    background-color: var(--SectionBack);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 1px 2px 3px rgb(from var(--FocusInvestActive) r g b/0.15);
+    margin-bottom: 13px;
+
+}
+
+.main__classificado--bloco>div>h2 {
+    font-size: 1.35em;
+    color: var(--PrimaryCompany1)
+}
+
+.main__classificado--made {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.main__input--Made {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main__input--Made>h2 {
+    text-align: center;
+}

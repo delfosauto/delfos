@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /*Cores*/
+    --PrimaryCompany1: rgb(11, 30, 54);
+    --PrimaryCompany2: #111827;
+    --PrimaryCompanyActive: #1E293B;
+    --PrimaryCompanyEmph: #465694;
+    --FocusBuy: #ff6620;
+    --Emprasy__Active--Buy: #661a01;
+    --FocusInvest: #00c853;
+    --Emprasy__Active--Invest: #163300;
+    --FocusLike: #EF4444;
+    /* --FocusInvestActive: rgb(6, 95, 70); */
+    --EmphasysWhite: #FFFFFF;
+    --ContentTxt: #374151;
+    --ContentLabel: #6b7280;
+    --SectionDiv: #e2e8f0;
+    --SectionBack: #f8fafc;
+    --cor-titulo: #121212;
+    --cor-text: #2b2b2b;
+
+
+    /*Fote*/
+    --fontMain: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Imagens */
+.line--horiztone {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 95%;
+    border-bottom: 1px solid var(--SectionDiv);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* Color */
+.contentlabel{
+    /* cor forte */
+    color: var(--cor-titulo);
+    font-weight: 600;
+}
+.contenttxt{
+    /* cor fraca */
+    color: var(--cor-text);
+    font-weight: 400;
+}
+.primarycompany1{
+    color: var(--PrimaryCompany1);
+}
+
+/* Class fonts */
+.Focus_txt--buy {
+    color: var(--Emprasy__Active--Buy);
+    text-decoration: underline;
+    font-weight: 700;
+    
+    letter-spacing: -0.01em;
+}
+
+.Focus_txt--invest {
+    color: var(--Emprasy__Active--Invest);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.Hero_textDestaq {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--FocusBuy);
+}
+.Hero_textDestaqInvs {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--FocusInvest);
+}
+
+
+.Subtitle--section {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.section--Title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+
+}
+
+.section--Labe {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.section--Txt {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.section--Company2 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02;
+}
+
+.section--Company1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.secction__socialvalid--ask>a {
+    margin-top: 16px;
+    text-decoration: underline;
+    line-height: 26px;
+}
+
+/* Active, Hover */
+.button__default--buy:active {
+    display: inline-block;
+
+    background-color: var(--Emprasy__Active--Buy);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    touch-action: manipulation;
+    filter: brightness(1.15);
+    transform: scale(0.92)
+}
+
+.button__default--invest:active {
+    display: flex;
+    background-color: var(--Emprasy__Active--Invest);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    touch-action: manipulation;
+    filter: brightness(1.15);
+    transform: scale(0.92)
+}
+.button__default--more:active {
+    display: flex;
+    background-color: var(--SectionBack);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    touch-action: manipulation;
+    filter: brightness(1.15);
+    transform: scale(0.92)
+}
+.button__default--seach:active {
+    background-color: var(--PrimaryCompanyActive);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    touch-action: manipulation;
+    filter: brightness(1.15);
+    transform: scale(0.92)
+}
+
+/* Botões */
+.button__default--seach {
+    display: inline-block;
+    width: 350px;
+    height: 40px;
+    border: 1.1px solid var(--EmphasysWhite);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.button__default {
+    display: inline-block;
+    width: 153px;
+    height: 40px;
+    border: 1.1px solid var(--EmphasysWhite);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.button__default--more {
+    background-color: #ffffff00;
+    color: var(--EmphasysWhite);
+    
+}
+
+.button__default--buy {
+    background-color: var(--FocusBuy);
+    color: var(--EmphasysWhite);
+}
+
+.button__default--basic {
+    background-color: var(--PrimaryCompany1);
+    color: var(--EmphasysWhite);
+}
+
+.button__default--ask {
+    background-color: #ffffff00;
+    color: var(--PrimaryCompany1);
+    width: 149px;
+    height: 40px;
+    border: 1.1px solid var(--PrimaryCompany1);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    line-height: 255%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.button__default--invest {
+    width: 153px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    /* font-size: 15px; */
+    background-color: var(--FocusInvest);
+    color: var(--EmphasysWhite);
+}
+
+.add_cart_btn {
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.add_cart_btn::before {
+    position: absolute;
+    font-family: 'Material Symbols Outlined';
+    content: "\e8cc";
+    left: -10px;
+    top: -1;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+
+.button__Menu--default {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: 1.1px solid var(--EmphasysWhite);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+

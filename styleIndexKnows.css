@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Config global */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* --INDEX--- */
+
+/* Botoes */
+
+.Hero__button--default {
+    display: flex;
+    margin: 20px auto 0px auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.More__button--default {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 20px;
+}
+
+
+
+/* Imagens */
+.secction__more--img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+.article__moreBuy:not(:last-child)::after {
+    position: absolute;
+    content: "⬇";
+    left: 45%;
+    font-size: 50px;
+    color: var(--ContentLabel);
+    bottom: -25px;
+    z-index: 9998;
+}
+
+.article__moreInvest:not(:last-child)::after {
+    font-family: 'Material Symbols Outlined';
+    content: "\e313";
+    position: absolute;
+    font-size: 80px;
+    color: var(--ContentTxt);
+    left: 38%;
+    bottom: -55px;
+    z-index: 9998;
+}
+
+.secction__socialvalid--ask>a::after {
+    font-family: 'Material Symbols Outlined';
+    content: "\eaaa";
+}
+
+/* Secções Hero*/
+.Hero__div--destaq {
+    width: 97%;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Hero__div--destaq>h2 {
+    margin: 0 20px;
+    color: var(--PrimaryCompany1);
+}
+
+.Hero__div--destaq>a {
+    margin-right: 20px;
+    text-decoration: underline;
+    color: var(--PrimaryCompanyEmph);
+}
+
+.Hero__div--seach {
+    display: none;
+    position: absolute;
+    left: 1%;
+    padding: 20px 0px 0px 0px;
+    width: 97%;
+    height: 90px;
+    margin: 0 auto;
+    background-color: var(--PrimaryCompany1);
+    color: var(--EmphasysWhite);
+    text-align: center;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.hero__secction {
+    width: 98%;
+    min-height: 250px;
+    border-radius: 12px;
+    margin: 0px auto;
+    margin-top: 8px;
+}
+
+.hero__secction--subdiv {
+    width: 80%;
+    color: var(--EmphasysWhite);
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.hero__secction--buy {
+    background-image: linear-gradient(rgba(11, 30, 54, 0.65)), url(imagens/HeroFundoBuy.png);
+    background-size: cover;
+}
+
+.hero__secction--invest {
+    background: linear-gradient(135deg,
+            rgba(5, 150, 104, 0.60),
+            rgba(11, 30, 54, 0.90)), url(imagens/HeroFundoInvest.png);
+    background-size: cover;
+}
+
+/* Secão carrocel */
+.hero__section--slide {
+    width: 95%;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    overflow: auto;
+    gap: 10px;
+}
+
+.hero__section--slide>article {}
+
+.hero__article--slide>div>img {
+    width: 60vw;
+    height: 150px;
+    object-fit: cover;
+    flex: 1 1 100%;
+    border-radius: 5px;
+}
+
+.Hero__slide--informarName {
+    font-weight: 500;
+    color: var(--PrimaryCompany2);
+}
+
+.Hero__slide--informarTag {
+    display: flex;
+    gap: 20px;
+    color: var(--ContentTxt);
+}
+
+/* Secções More*/
+
+.secction__moreBuy {
+    width: 280px;
+    margin: 0 auto;
+    color: var(--PrimaryCompany2);
+}
+
+.article__moreBuy>div>span {
+    color: var(--FocusBuy);
+}
+
+.article__moreBuy {
+    height: 145px;
+    position: relative;
+    display: flex;
+    padding: 10px 10px 10px 5px;
+    align-items: flex-start;
+    border: 1px solid var(--PrimaryCompany2);
+}
+
+.article__moreBuy>.article__moreBuy--div {
+    align-self: center;
+}
+
+.article__moreBuy1 {
+    background-color: var(--EmphasysWhite);
+}
+
+.article__moreBuy2 {
+    background-color: var(--SectionBack);
+}
+
+.article__moreBuy3 {
+    background-color: #e2e8f0;
+}
+
+.article__moreBuy4 {
+    background-color: #cbd5e2;
+}
+
+.article__moreBuy>div>H3,
+.article__moreInvest>div>H3 {
+    color: var(--PrimaryCompany1);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.secction__moreBuy>H2,
+.secction__moreInvest>H2,
+.secction__socialvalid--ask>h2 {
+    color: var(--PrimaryCompany1);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.secction__moreInvest {
+    width: 300px;
+    margin: 0 auto;
+    color: var(--PrimaryCompany2);
+}
+
+.article__moreInvest {
+    height: 145px;
+    position: relative;
+    display: flex;
+    padding: 10px 10px 10px 5px;
+    align-items: flex-start;
+    border: 1px solid var(--PrimaryCompany2);
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 16px;
+}
+
+.article__moreInvest>.article__moreBuy--div {
+    align-self: center;
+    padding: 10px;
+}
+
+.article__moreInvest>div>span {
+    color: var(--Emprasy__Active--Invest);
+}
+
+.secction__socialvalid--ask {
+    background-color: var(--SectionDiv);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: var(--ContentTxt);
+}
+
+.article__moreInvest--DivCicle {
+    border: 1.5px solid var(--Emprasy__Active--Invest);
+    border-radius: 20px;
+    padding: 4px;
+}

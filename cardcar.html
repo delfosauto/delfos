@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfos</title>
+    <!--Import materialize-->
+    <link rel="stylesheet" href="styleMenuUP.css">
+    <!-- <link rel="stylesheet" href="styleIndexKnows.css"> -->
+    <link rel="stylesheet" href="styleCorFonts.css">
+    <link rel="stylesheet" href="styleCardCar.css">
+    <link rel="stylesheet" href="styleListCar.css">
+    <script src="scriptUP.js" defer></script>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <header class="menu__default">
+        <nav>
+            <button onclick="opemenu()">
+                <span style="font-size: 30px;" class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+
+            <div class="headFoot--Company" id="menu">
+                <button onclick="ofmenu()"><span style="font-size: 30px;"
+                        class="material-symbols-outlined menu-icon">close</span></button>
+                <ul style="list-style: none;">
+                    <li><a href="indexUPGRADE.html">Página inicial</a></li>
+                    <li><a>Como funciona</a></li>
+                    <li><a>Comprar Viatura</a></li>
+                    <li><a>Investir em cotas</a></li>
+                    <li><a>Formulário Importar carro</a></li>
+                    <li><a>Perguntas frequentes</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu__default--logo">
+            <a href="indexUPGRADE.html"><img src="imagens/logo rev1.png" alt=""></a>
+            <p style=" margin-bottom: 0px;" class="">STAND CAR Importações</p>
+        </div>
+
+    </header>
+
+    <main>
+        <div style="height: 51px;">Faixa menu</div>
+        <div class="mascara" id="mascara" onclick="ofmenu()"></div>
+        <a id="BtmBack" onclick="pageBack()">
+            <span class="material-symbols-outlined menu-icon" style="font-size: 40px;">chevron_left</span>
+        </a>
+        <section class="main__first--img">
+            <div>
+                <img class="IdCarImge" id="IdCarImg1" src="" alt="" title="">
+                <img class="IdCarImge" id="IdCarImg2" src="" alt="" title="">
+                <img class="IdCarImge" id="IdCarImg3" src="" alt="" title="">
+                <img class="IdCarImge" id="IdCarImg4" src="" alt="" title="">
+                <img class="IdCarImge" id="IdCarImg5" src="" alt="" title="">
+            </div>
+            <div class="slider-nav">
+                <a href="#IdCarImg1"></a>
+                <a href="#IdCarImg2"></a>
+                <a href="#IdCarImg3"></a>
+                <a href="#IdCarImg4"></a>
+                <a href="#IdCarImg5"></a>
+            </div>
+        </section>
+        <section class="main__classificado--card">
+            <div class="main__classificado--tit">
+                <div class="contentlabel">
+                    <h2 ><span id="namecar"></span><span id="modcar"></span> <span id="verscar"></span></h2>
+                    
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                        style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24">share</span>
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                        style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24">favorite</span>
+                </div>
+            </div>
+            <div id="section--Price">
+                <div class="As_buy">
+                    <div class="section--Price ">
+                        <div><span class="section--Txt contenttxt" style="margin-right: 30px;">Mercado Nacional:</span><span
+                                class="section--Labe main__classificado--priceNac" id="goldOld">12 740 €</span></div>
+                        <div><span class="section--Company2 contentlabel" style="margin-right: 30px;">Importação:</span><span
+                                class="section--Company1 Focus_txt--buy" id="gold"></span><span
+                                class="section--Company1 Focus_txt--buy"> €</span></div>
+                    </div>
+                    <div class="section__Price--attention">
+                        <span class="material-symbols-outlined price__icon--buy" aria-hidden="true"
+                            style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24">local_fire_department</span>
+                        <div><span id="section__Price--attention-ClientBuy"></span><span> pessoas estão interessadas neste veículo</span></div>
+                    </div>
+                </div>
+                <div class="As_Invest">
+                    <div class="line--horiztone" id="LineBuy"></div>
+                    <div class="section--PriceInvest">
+                        <h2 class="contentlabel">Reservas da Viatura</h2>
+                        <div>
+                            <span class="contentlabel">Meta:</span><span id="silver" class="contenttxt"></span> <span> €</span>
+                            <div class="priceInvest__progress">
+                                <div id="priceInvest__progress-bar" class="priceInvest__progress-bar"></div>
+                            </div>
+                            <span class="contenttxt" id="silverPorc"></span><span class="contenttxt">% captado</span>
+                        </div>
+                    </div>
+                    <div class="section__Price--attention">
+                        <span class="material-symbols-outlined price__icon--invest" aria-hidden="true"
+                            style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24">group_add</span>
+                        <div><span id="section__Price--attention-members">2</span><span> investidore(s) a participar</span></div>
+                    </div>
+                    <div class="line--horiztone" id="LineBuy"></div>
+                    <div class="section--PriceInvest">
+                        <h2 class="contentlabel">Simule o seu investimento</h2>
+                    </div>
+                    <div class="section__Price--simu" id="price_simu">
+                       
+                    </div>
+                    <div class="section__Price--gain">
+                        <div class="section__Price--gainDiv">
+                            <div class="section__Price--gainDivdiv">
+                                <div><span>Lucro líquido</span></div>
+                                <div><span>+</span><span id="section__Price--gainDivdiv-LL"> --</span><span>€</span></div>
+                            </div>
+                        </div>
+                        <div class="section__Price--gainDiv">
+                            <div class="section__Price--gainDivdiv">
+                                <div><span>Lucro líquido</span></div>
+                                <div><span>+</span><span id="section__Price--gainDivdiv-LLPorc"> --</span><span>%</span></div>
+                            </div>
+                        </div>
+                        <div class="section__Price--gainDiv">
+                            <div>
+                                <div><span>Prazo de reembolso</span></div>
+                                <div><span id="section__Price--gainDivdiv-term"> --</span><span> dias</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line--horiztone" id="LineBuy"></div>
+                <div class="section__Price--compare As_Invest">
+                    <h2 class="contentlabel">Comparativo de Rendimento</h2>
+                    <div class="section__compare">
+                        <div class="article__compare">
+                            <div class="article__compare--img">
+                                <img>
+                            </div>
+                            <div class="article__compare--txt"><p>Rendimento Delfos vs. poupança Banco</p></div>
+                        </div>
+                        <div class="article__compare">
+                            <div class="article__compare--img">
+                                <img>
+                            </div>
+                            <div class="article__compare--txt"><p>Rendimento Delfos vs. poupança Banco</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line--horiztone As_Invest" id="LineBuy"></div>
+        <section class="main__input--inf" alt="informações">
+            <h2 class="contentlabel">Dados do veículo</h2>
+            <div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">calendar_month</span></div>
+                    <div class="contenttxt"><label>Ano:</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="yearCar"></span></div>
+                </div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">pin_road_2</span></div>
+                    <div class="contenttxt"><label>quilometros</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="kmCar">195</span></div>
+                </div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">local_gas_station</span></div>
+                    <div class="contenttxt"><label>combustivel</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="fulcar">diesel</span></div>
+                </div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">speed_4</span></div>
+                    <div class="contenttxt"><label>Potência(CV)</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="cvCar">143</span></div>
+                </div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">Manufacturing</span></div>
+                    <div class="contenttxt"><label>cilindrada</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="ccCar">1.995</span></div>
+                </div>
+                <div class="main__input--inf-data">
+                    <div class="contenttxt"><span class="material-symbols-outlined menu-icon">auto_transmission</span></div>
+                    <div class="contenttxt"><label>Tipo de caixa</label></div>
+                    <div class="contentlabel"><span class="main__span--car" id="boxCar">manual</span></div>
+                </div>
+            </div>
+        </section>
+        <div class="line--horiztone" id="LineBuy"></div>
+        <Section class="main__input--Made">
+            <h2 class="contentlabel">Origem</h2>
+            <span class="contentlabel" id="countrycar"></span>
+            <div><span class="contentlabel">Número de referencia:</span><span id="refeCar" class="contenttxt"></span></div>
+
+        </Section>
+        <div class="line--horiztone " id="LineBuy"></div>
+        <section class="sectio__detalhes--ConfBasic">
+            <h2 class="contentlabel">Consumo de energia</h2>
+            <div><span class="contentlabel">Consumo Urbano: </span><span id="sectio__detalhes--ConfBasic-ConsB" class="contenttxt"></span><span> l/100km</span></div>
+            <div><span class="contentlabel">Consumo Extra Urbano: </span><span id="sectio__detalhes--ConfBasic-ConsE" class="contenttxt"></span><span> l/100km</span></div>
+            
+        </section>
+        <div class="line--horiztone As_buy" id="LineBuy"></div>
+        <section class="main__input--access As_buy">
+            <h2 class="contentlabel">Configuração</h2>
+            
+            <div id="audio" class="sectio__detalhes--ConfBasic">
+                <h3 class="contentlabel">Áudio e multimédia</h3>
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="audioTab">
+                       
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                
+            </div>
+            <div id="conforto" class="sectio__detalhes--ConfBasic">
+                <h3 class="contentlabel">Conforto e Outros Equipamentos</h3>
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="confortoTab">
+                        
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                
+            </div>
+            <div id="conducao" class="sectio__detalhes--ConfBasic">
+                <h3 class="contentlabel">Electrónica e Assistência à condução</h3>
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="conducaoTab">
+                        
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                
+            </div>
+            <div id="segura" class="sectio__detalhes--ConfBasic">
+                <h3 class="contentlabel">Segurança</h3>
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <tr></tr>
+                        
+                    </thead>
+                    <tbody id="seguraTab">
+                        
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                
+            </div>
+        </section>
+        <section class="section__final">
+            <div>
+                <span class="As_buy section--Company2">Quero este carro para mim</span>
+                <span class="As_Invest section--Company2">Quero investir nesta viatura</span>
+                <div>
+                    <button class="button__default button__default--buy As_buy">Pedir proposta</button>
+                    <button style="line-height:15px" class="button__default button__default--invest As_Invest">Avançar com Investimento</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="headFoot--Company foot__default">
+        <div class="">
+            <h2>Siga-nos</h2>
+
+            <p><svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fundo quadrado arredondado -->
+                    <rect x="2" y="2" width="20" height="20" rx="4" ry="4" fill="#1877F2" />
+                    <!-- Letra F -->
+                    <path d="M14 7h-1.5c-1.1 0-2 .9-2 2v2H9v3h1.5v4h3v-4H15v-3h-1.5V9h1.5V7z" fill="#FFFFFF" />
+                </svg>
+
+                <span>Facebook</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="red">
+                    <path
+                        d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.3 2.5 12 2.5 12 2.5h-.1s-5.3 0-8.7.3c-.4.1-1.2.1-2 1-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.4.3 7.4.3s5.3 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.7 14.6V7.9l6.4 3.4-6.4 3.3z" />
+                </svg>
+
+                <span>Youtube</span>
+            </p>
+            <p><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6.5-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
+                </svg>
+
+                <span>Instagram</span>
+            </p>
+            <h2>Serviço de apoio ao cliente</h2>
+            <p>Apoio ao Cliente: +351 210 000 000</p>
+            <p>(Seg a Sex: 09h - 18 h)</p>
+            <p>E-mail: contato@suaempresa.pt</p>
+            <p>Sede: Leiria, Portugal</p>
+            <h2>Sobre nós</h2>
+            <p>Políticas de Cookies</p>
+            <p>Políticas de Privacidade</p>
+            <p>Livro de Reclamações online</p>
+            <p>Resolução Alternativa de Litígios (RAL)</p>
+            <h2>Isenção de Responsabilidade / Nota Legal</h2>
+            <p>"Aviso Legal: Os rendimentos passados não garantem rentabilidades futuras. As estimativas de lucro
+                baseiam-se em análises do mercado automóvel nacional. Consulte sempre os Termos e Condições antes de
+                participar em qualquer oportunidade de investimento participado."</p>
+        </div>
+    </footer>
+</body>
+
+</html>
