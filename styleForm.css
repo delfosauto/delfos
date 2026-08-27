@@ -7,15 +7,37 @@
 
 html {
     height: 100vh;
+    
 }
+.sectio__form-box{
+    margin: auto;
+    width: 390px;
+    border: 1px solid var(--SectionDiv);
+    border-radius: 8px;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--SectionBack);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* box-shadow: 0px 1px 5px rgba(0,0,0,0.3); */
+}
+
 .Section__form--referencia{
     padding: 3px;
-    width: 280px; 
+    width: 360px; 
     display: flex;
     margin: auto;
     gap: 10px;
-    border: 1px solid black;
     border-radius: 8px;
+    /* background-color: var(--SectionBack); */
+    border: 1px solid rgb(118, 118, 118);
+     margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Section__form--referencia-span>span:nth-child(1){
+    color: var(--ContentLabel);
+}
+.Section__form--referencia-span>span:nth-child(2){
+    color: var(--ContentTxt);
 }
 .Section__form--referencia-img{
     width: 90px;
@@ -28,29 +50,87 @@ html {
     border-radius: 8px;
 }
 
-.Section__form {
+.Section__form--button{
     text-align: center;
+  
 }
 
-.Section__form--input {
-    width: 260px;
-    margin-top: 10px;
+.Section__form>h2{
+    margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
+}
+.Section__form--inputHalf{
+   display: flex;
+    width: 360px;
+    margin: auto;
+}
+.Section__form--inputHalf-txt{
+    width: 170px;
+    height: 23px;
+     margin: 5px;
+}
+
+
+.Section__form--input {
+   display: flex;
+   width: 360px;
+   margin: auto;
+}
+.Section__form--input-txt{
+    width: 360px;
+    height: 25px;
+    margin: 5px;
 }
 
 .Section__form--input-tel {
-    width: 280px;
+    display: flex;
+    width: 360px;
     margin: auto;
 }
+.section__business{
+    width: 360px;
+    margin: auto;
+}
+.section--atived{
+    visibility: visible;
+    opacity: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section--deactivated{
+    visibility: hidden;
+    opacity: 0px;
+    height: 0px;
+}
 
-.Section__form--input-tel>input {
-    width: 195px;
+.section__business--mensagem>div>input:nth-child(1){
+    width: 360px;
+    height: 70px;
+}
+#business_S1{
+    
+}
+
+.Section__form--input-tel>label>div>select {
+    width: 72px ;
+    height: 25px;
     margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Section__form--input-tel>label>div>input {
+    width: 260px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .Section__form--check {
     display: flex;
-    width: 270px;
+    width: 370px;
     margin: auto;
     text-align: left;
     gap: 10px;
