@@ -7,9 +7,10 @@
 
 html {
     height: 100vh;
-    
+
 }
-.sectio__form-box{
+
+.sectio__form-box {
     margin: auto;
     width: 390px;
     border: 1px solid var(--SectionDiv);
@@ -21,63 +22,70 @@ html {
     /* box-shadow: 0px 1px 5px rgba(0,0,0,0.3); */
 }
 
-.Section__form--referencia{
+.Section__form--referencia {
     padding: 3px;
-    width: 360px; 
+    width: 360px;
     display: flex;
     margin: auto;
     gap: 10px;
     border-radius: 8px;
     /* background-color: var(--SectionBack); */
-    border: 1px solid rgb(118, 118, 118);
-     margin-top: 5px;
+    
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-.Section__form--referencia-span>span:nth-child(1){
+
+.Section__form--referencia-span>span:nth-child(1) {
     color: var(--ContentLabel);
 }
-.Section__form--referencia-span>span:nth-child(2){
+
+.Section__form--referencia-span>span:nth-child(2) {
     color: var(--ContentTxt);
 }
-.Section__form--referencia-img{
+
+.Section__form--referencia-img {
     width: 90px;
     height: 60px;
 }
-.Section__form--referencia-img>img{
+
+.Section__form--referencia-img>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 8px;
 }
 
-.Section__form--button{
+.Section__form--button {
     text-align: center;
-  
+
 }
 
-.Section__form>h2{
+.Section__form>h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
-.Section__form--inputHalf{
-   display: flex;
+
+.Section__form--inputHalf {
+    display: flex;
     width: 360px;
     margin: auto;
 }
-.Section__form--inputHalf-txt{
+
+.Section__form--inputHalf-txt {
     width: 170px;
     height: 23px;
-     margin: 5px;
+    margin: 5px;
 }
 
 
 .Section__form--input {
-   display: flex;
-   width: 360px;
-   margin: auto;
+    display: flex;
+    width: 360px;
+    margin: auto;
 }
-.Section__form--input-txt{
+
+.Section__form--input-txt {
     width: 360px;
     height: 25px;
     margin: 5px;
@@ -87,33 +95,46 @@ html {
     display: flex;
     width: 360px;
     margin: auto;
+
 }
-.section__business{
+
+.section__business {
     width: 360px;
     margin: auto;
 }
-.section--atived{
+
+.section__business--label {
+    display: flex;
+    line-height: -30px;
+    align-items: center;
+    gap: 10px;
+}
+
+.section--atived {
     visibility: visible;
     opacity: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.section--deactivated{
+
+.section--deactivated {
     visibility: hidden;
     opacity: 0px;
     height: 0px;
 }
 
-.section__business--mensagem>div>input:nth-child(1){
+.section__business--mensagem>div>input:nth-child(1) {
     width: 360px;
     height: 70px;
 }
-#business_S1{
-    
+
+#business_S {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .Section__form--input-tel>label>div>select {
-    width: 72px ;
+    width: 72px;
     height: 25px;
     margin-left: 10px;
     margin-top: 5px;
@@ -128,6 +149,8 @@ html {
     margin-bottom: 5px;
 }
 
+
+
 .Section__form--check {
     display: flex;
     width: 370px;
@@ -141,6 +164,32 @@ html {
 
 .Section__form--check>span>a {
     color: var(--PrimaryCompanyEmph);
+}
+
+.Section__form--check-noid {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--FocusBuy);
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.Section__form--check-noid:checked {
+    background-color: var(--FocusBuy);
+}
+
+.Section__form--check-noid:checked::after {
+    content: '✔';
+    color: white;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+    font-size: 14px;
 }
 
 #Section__form--check {

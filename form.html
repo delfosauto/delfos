@@ -105,15 +105,15 @@
                 <section class="sectio__form-box">
 
                     <div class="section__business">
-                        <p>Outros:</p>
+                        <p>Preferências de negôcio:</p>
                        
-                        <div>
-                            <div><label><input id="business_S" onclick="ativar(this)"  type="checkbox"><span>Retomara de veículo</span></label>
+                        <div >
+                            <div><label class="section__business--label"><input id="business_S" onclick="ativar(this)"  type="checkbox" class="Section__form--check-noid"><div ><span >Retoma de veículo</span></div></label>
                             </div>
                             <div id="business_S1" class="section--deactivated">
                                 <div class="Section__form--inputHalf">
                                     <div>
-                                        <label for="">Marca<input class="Section__form--inputHalf-txt" type="text" id=""
+                                        <label for="">Marca<input class="Section__form--inputHalf-txt " type="text" id=""
                                                 placeholder="Por exemplo: Mercedes-benz">
                                         </label>
                                     </div>
@@ -151,8 +151,8 @@
                             </div>
                         </div>
                         <div class="section__business--mensagem">
-                            <div>
-                                <label><input onclick="ativar(this)" id="business_M" type="checkbox"><span>Enviar uma Mensagem</span>
+                            <div >
+                                <label class="section__business--label"><input class="Section__form--check-noid" onclick="ativar(this)" id="business_M" type="checkbox"><span>Enviar uma Mensagem</span>
                                 </label>
                             </div>
                             <div id="business_M1" class="section--deactivated">
@@ -163,7 +163,7 @@
                     </div>
                 </section>
                 <div class="Section__form--check ">
-                    <div><input id="Section__form--check" type="checkbox"></div>
+                    <div><input required id="Section__form--check" type="checkbox"></div>
                     <span class="contenttxt">Concordo com o processamento dos meus dados conforme descrito na
                         <a>declaração de consentimento</a> da Delfos Stand Car. Posso revogar este consentimentoa
                         qualquer momento, com efeito para o futuro. </span>
