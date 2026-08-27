@@ -58,12 +58,12 @@
                 <section class="sectio__form-box">
                     <div class="Section__form--inputHalf">
                         <div>
-                            <label for="">Primeiro Nome<input class="Section__form--inputHalf-txt" type="text" id=""
+                            <label for="">Primeiro Nome<input class="Section__form--inputHalf-txt" type="text" id="nome"
                                     placeholder="Por exemplo: João" required>
                             </label>
                         </div>
                         <div>
-                            <label for="">Sobrenome<input class="Section__form--inputHalf-txt" type="text" id="nome"
+                            <label for="">Sobrenome<input class="Section__form--inputHalf-txt" type="text" id="sobrenome"
                                     placeholder="Por exemplo: Silva" required>
                             </label>
                         </div>
@@ -79,16 +79,17 @@
                     <div class="Section__form--input-tel">
                         <label for="">Seu número de telefone (opcional)
                             <div>
-                                <select name="" id="">
-                                    <option value="">+351</option>
-                                    <option value="">+32</option>
-                                    <option value="">+49</option>
+                                <select id="fixtele">
+                                    <option value="+351">+351</option>
+                                    <option value="+32">+32</option>
+                                    <option value="+49">+49</option>
                                 </select>
                                 <input type="tel" id="tele" placeholder="exemplo: 912 345 678" maxlength="9"
                                     pattern="[0-9]{9}" autocomplete="tel">
                             </div>
                         </label>
                     </div>
+                    <input type="hidden" id="fixteleDolle">
                 </section>
 
                 <section class="sectio__form-box">
@@ -113,37 +114,37 @@
                             <div id="business_S1" class="section--deactivated">
                                 <div class="Section__form--inputHalf">
                                     <div>
-                                        <label for="">Marca<input class="Section__form--inputHalf-txt " type="text" id=""
+                                        <label for="">Marca<input class="Section__form--inputHalf-txt " type="text" id="marca"
                                                 placeholder="Por exemplo: Mercedes-benz">
                                         </label>
                                     </div>
                                     <div>
                                         <label for="">Modelo<input class="Section__form--inputHalf-txt" type="text"
-                                                id="" placeholder="Por exemplo: A200">
+                                                id="modelo" placeholder="Por exemplo: A200">
                                         </label>
                                     </div>
                                 </div>
                                 <div class="Section__form--inputHalf">
                                     <div>
                                         <label for="">Quilómetros <input class="Section__form--inputHalf-txt"
-                                                type="text" id="" placeholder="Por exemplo: 200 000">
+                                                type="text" id="km" placeholder="Por exemplo: 200 000">
                                         </label>
                                     </div>
                                     <div>
                                         <label for="">Ano<input class="Section__form--inputHalf-txt" type="text"
-                                                id="" placeholder="Por exemplo: 2012">
+                                                id="ano" placeholder="Por exemplo: 2012">
                                         </label>
                                     </div>
                                 </div>
                                 <div class="Section__form--inputHalf">
                                     <div>
                                         <label for="">cilindrada <input class="Section__form--inputHalf-txt"
-                                                type="text" id="" placeholder="Por exemplo: 1.6">
+                                                type="text" id="cc" placeholder="Por exemplo: 1.6">
                                         </label>
                                     </div>
                                     <div>
                                         <label for="">Matrícula<input class="Section__form--inputHalf-txt" type="text"
-                                                id="" placeholder="Por exemplo: 9395AF">
+                                                id="placa" placeholder="Por exemplo: 9395AF">
                                         </label>
                                     </div>
                                 </div>
@@ -156,7 +157,7 @@
                                 </label>
                             </div>
                             <div id="business_M1" class="section--deactivated">
-                                <input type="text"
+                                <input type="text" id="mensagem"
                                     placeholder="Eu estou interessado nesta viatura.Por favor me contate">
                             </div>
                         </div>

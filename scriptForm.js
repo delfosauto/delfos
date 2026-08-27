@@ -8,15 +8,10 @@ function pageBackForm() {
     document.getElementById("BtmBack").href = "cardcar.html";
 }
 
-
-
-
 function ativar(id) {
-    let ids= id.id; 
-    let cl = document.getElementById(ids+"1");
+    let ids = id.id;
+    let cl = document.getElementById(ids + "1");
     let cls = cl.className;
-
-
     if (cls == "section--atived") {
         console.log(cls);
         cl.classList.remove("section--atived");
@@ -27,3 +22,55 @@ function ativar(id) {
         cl.classList.add("section--atived");
     }
 }
+
+const select = document.getElementById("fixtele").addEventListener('change',(e)=>{
+    const valorselect = e.target.value;
+    console.log(valorselect);
+    document.getElementById("fixteleDolle").value = valorselect;
+    let valorselect2 = document.getElementById("fixteleDolle").value ;
+    console.log(valorselect2);
+} )
+
+
+/*Formulario de envio */
+const URL_SCRIPT = 'https://script.google.com/macros/s/AKfycbxqcIA8SIiWXNYD84cxM1SUSonZVBcNfQXg_fsl2Kz30K1kqjl_Xuuj-EyvuGoBcmno/exec';
+
+document.getElementById('Section__form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o recarregamento da página
+
+    const status = document.getElementById('statusEnvio');
+    status.innerText = "Enviando...";
+
+    const dados = {
+        nome: document.getElementById('nome').value,
+        sobrenome: document.getElementById('sobrenome').value,
+        email: document.getElementById('email').value,
+        fixtele: document.getElementById('fixteleDolle').value,
+        tele: document.getElementById('tele').value,
+        idlink: localStorage.getItem("IdLink"),
+        marca: document.getElementById('marca').value,
+        modelo: document.getElementById('modelo').value,
+        km: document.getElementById('km').value,
+        ano: document.getElementById('ano').value,
+        cc: document.getElementById('cc').value,
+        placa: document.getElementById('placa').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    fetch(URL_SCRIPT, {
+        method: 'POST',
+        mode: 'no-cors', // Necessário para evitar bloqueio de CORS com o Apps Script
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dados)
+    })
+        .then(() => {
+            status.innerText = "Mensagem enviada com sucesso!";
+            document.getElementById('Section__form').reset();
+        })
+        .catch(error => {
+            status.innerText = "Erro ao enviar mensagem.";
+            console.error(error);
+        });
+});
