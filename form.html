@@ -30,17 +30,17 @@
                 <button onclick="ofmenu()"><span style="font-size: 30px;"
                         class="material-symbols-outlined menu-icon">close</span></button>
                 <ul style="list-style: none;">
-                    <li><a href="indexUPGRADE.html">Página inicial</a></li>
-                    <li><a>Como funciona</a></li>
-                    <li><a>Comprar Viatura</a></li>
-                    <li><a>Investir em cotas</a></li>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="index.html#LineBuy">Como funciona</a></li>
+                    <li><a href="listcarbuy.html">Comprar Viatura</a></li>
+                    <li><a href="listcarbuy.html">Investir em cotas</a></li>
                     <li><a>Formulário Importar carro</a></li>
                     <li><a>Perguntas frequentes</a></li>
                 </ul>
             </div>
         </nav>
         <div class="menu__default--logo">
-            <a href="indexUPGRADE.html"><img src="imagens/logo rev1.png" alt=""></a>
+            <a href="index.html"><img src="imagens/logo rev1.png" alt=""></a>
             <p style=" margin-bottom: 0px;" class="">STAND CAR Importações</p>
         </div>
 
@@ -81,11 +81,12 @@
                         <label for="">Seu número de telefone (opcional)
                             <div>
                                 <select id="fixtele">
+                                    <option value="">+00</option>
                                     <option value="+351">+351</option>
                                     <option value="+32">+32</option>
                                     <option value="+49">+49</option>
                                 </select>
-                                <input type="tel" id="tele" placeholder="exemplo: 912 345 678" maxlength="9"
+                                <input type="tel" id="tele" placeholder="exemplo: 912345678" maxlength="9"
                                     pattern="[0-9]{9}" autocomplete="tel">
                             </div>
                         </label>
@@ -127,7 +128,7 @@
 
                         <div>
                             <div class="As_buy"><label class="section__business--label"><input id="business_S"
-                                        onclick="ativar(this)" type="checkbox" class="Section__form--check-noid">
+                                        onclick="ativar(this)" type="checkbox" class="Section__form--check-noid Section__form--check-noid-buy">
                                     <div><span>Retoma de veículo</span></div>
                                 </label>
                             </div>
@@ -171,49 +172,33 @@
 
                             </div>
                         </div>
-                        <div class="section__business--mensagem As_buy">
+                        <div class="section__business--mensagem">
                             <div>
-                                <label class="section__business--label"><input class="Section__form--check-noid-buy"
+                                <label class="section__business--label"><input class="Section__form--check-noid"
                                         onclick="ativar(this)" id="business_M" type="checkbox"><span>Enviar uma
                                         Mensagem</span>
                                 </label>
                             </div>
                             <div id="business_M1" class="section--deactivated">
                                 <input type="text" id="mensagem"
-                                    placeholder="Eu estou interessado nesta viatura.Por favor me contate">
-                            </div>
-                        </div>
-                        <div class="section__business--mensagem As_Invest">
-                            <div>
-                                <label class="section__business--label "><input
-                                        class="Section__form--check-noid Section__form--check-noid-invest"
-                                        onclick="ativar(this)" id="business_MI" type="checkbox"><span>Enviar uma
-                                        Mensagem</span>
-                                </label>
-                            </div>
-                            <div id="business_MI1" class="section--deactivated">
-                                <input type="text" id="mensagem"
-                                    placeholder="Eu estou interessado nesta viatura.Por favor me contate">
+                                    placeholder="Escreva aqui a sua dúvida">
                             </div>
                         </div>
                     </div>
                 </section>
                 <div class="Section__form--check ">
-                    <div><input required class="Section__form--check-agree Section__form--check-agree-buy As_buy"
-                            type="checkbox"></div>
-                    <div><input class="Section__form--check-agree Section__form--check-agree-Invest As_Invest"
-                            type="checkbox"></div>
+                    <div><input required id="form--check-agree"
+                            class="Section__form--check-agree" type="checkbox"></div>
+
                     <span class="contenttxt">Concordo com o processamento dos meus dados conforme descrito na
                         <a>declaração de consentimento</a> da Delfos Stand Car. Posso revogar este consentimentoa
                         qualquer momento, com efeito para o futuro. </span>
                 </div>
 
-                <div class="Section__form--button As_buy">
-                    <button id="" class="button__default button__default--buy" type="submit">
-                        Enviar Mensagem
-                    </button>
+                <div class="Section__form--button">
+                    <button id="Section__form--button-send" class="button__default" type="submit"></button>
                 </div>
-                
+
             </form>
 
             <p id="statusEnvio"></p>

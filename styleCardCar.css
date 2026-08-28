@@ -258,10 +258,11 @@ html {
 
 .section__final {
     width: 99%;
-    height: 115px;
+    padding-top: 10px;
+    height: 120px;
     background-color: var(--PrimaryCompany1);
     position: fixed;
-    top: 90vh;
+    top: 87vh;
     border: 2px solid var(--EmphasysWhite);
     border-radius: 5px;
 
@@ -278,7 +279,7 @@ html {
     margin-bottom: 10px;
 }
 
-.section__final>div>div>button {
+.section__final>div>div>a {
 
     margin: auto;
 }

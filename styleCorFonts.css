@@ -147,7 +147,7 @@ body {
 }
 
 .button__default--invest:active {
-    display: flex;
+    /* display: flex; */
     background-color: var(--Emprasy__Active--Invest);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
