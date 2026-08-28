@@ -272,4 +272,8 @@ function LLInvest(e) {
     LL.innerText = LLCalc;
     LLPorc.innerText = BDInvest[LineInvest].profitPorc;
     term.innerText = BDInvest[LineInvest].prazo;
+    localStorage.setItem("valor",LLCalc);
+    localStorage.setItem("NCotas",id);
+    localStorage.setItem("CotaMin",BDInvest[linha].Mincota);
+    localStorage.setItem("Prazo",BDInvest[LineInvest].prazo);
 }

@@ -53,7 +53,8 @@
         </a>
 
         <section class="Section__form">
-            <h2 class="contentlabel">Solicitar proposta</h2>
+            <h2 class="contentlabel As_buy">Solicitar proposta</h2>
+            <h2 class="contentlabel As_Invest">Solicitar aquisição de cotas</h2>
             <form id="Section__form">
                 <section class="sectio__form-box">
                     <div class="Section__form--inputHalf">
@@ -63,8 +64,8 @@
                             </label>
                         </div>
                         <div>
-                            <label for="">Sobrenome<input class="Section__form--inputHalf-txt" type="text" id="sobrenome"
-                                    placeholder="Por exemplo: Silva" required>
+                            <label for="">Sobrenome<input class="Section__form--inputHalf-txt" type="text"
+                                    id="sobrenome" placeholder="Por exemplo: Silva" required>
                             </label>
                         </div>
                     </div>
@@ -93,29 +94,48 @@
                 </section>
 
                 <section class="sectio__form-box">
-                    <p class="Section__form--input">Viatura escolhida</p>
+                    <p class="Section__form--input As_buy">Viatura escolhida</p>
+                    <p class="Section__form--input As_Invest">Investimento escolhido</p>
                     <section class="Section__form--referencia">
                         <div class="Section__form--referencia-img">
                             <img class="IdCarImge" id="IdCarImg1" src="" alt="" title="">
                         </div>
-                        <div class="Section__form--referencia-span"><span>Número de referencia:</span><span id="refeCar"
-                                class=""></span>
+                        <div>
+                            <div class="Section__form--referencia-span"><span>Número de referencia:</span><span
+                                    id="refeCar" class=""></span>
+                            </div>
+                            <div class="Section__form--referencia-span As_Invest"><span>Capital:</span><span
+                                    id="CarCapital" class=""></span><span> €</span>
+                            </div>
+                            <div class="Section__form--referencia-span As_Invest"><span>Total cota(s):</span><span
+                                    id="CarCotas" class=""></span><span> unidade(s)</span>
+                            </div>
+                            <div class="Section__form--referencia-span As_Invest"><span>Prazo de reembolso:</span><span
+                                    id="CarPrazo" class=""></span><span> dias</span>
+                            </div>
+                            <div class="Section__form--referencia-span As_Invest"><span>Lucro líquido:</span><span
+                                    id="CarLL" class=""></span><span> €</span>
+                            </div>
                         </div>
+
                     </section>
                 </section>
                 <section class="sectio__form-box">
 
                     <div class="section__business">
                         <p>Preferências de negôcio:</p>
-                       
-                        <div >
-                            <div><label class="section__business--label"><input id="business_S" onclick="ativar(this)"  type="checkbox" class="Section__form--check-noid"><div ><span >Retoma de veículo</span></div></label>
+
+                        <div>
+                            <div class="As_buy"><label class="section__business--label"><input id="business_S"
+                                        onclick="ativar(this)" type="checkbox" class="Section__form--check-noid">
+                                    <div><span>Retoma de veículo</span></div>
+                                </label>
                             </div>
                             <div id="business_S1" class="section--deactivated">
                                 <div class="Section__form--inputHalf">
                                     <div>
-                                        <label for="">Marca<input class="Section__form--inputHalf-txt " type="text" id="marca"
-                                                placeholder="Por exemplo: Mercedes-benz">
+                                        <label for="">Marca<input class="Section__form--inputHalf-txt " type="text"
+                                                id="marca" placeholder="Por exemplo: Mercedes-benz">
                                         </label>
                                     </div>
                                     <div>
@@ -138,8 +158,8 @@
                                 </div>
                                 <div class="Section__form--inputHalf">
                                     <div>
-                                        <label for="">cilindrada <input class="Section__form--inputHalf-txt"
-                                                type="text" id="cc" placeholder="Por exemplo: 1.6">
+                                        <label for="">cilindrada <input class="Section__form--inputHalf-txt" type="text"
+                                                id="cc" placeholder="Por exemplo: 1.6">
                                         </label>
                                     </div>
                                     <div>
@@ -148,12 +168,14 @@
                                         </label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="section__business--mensagem">
-                            <div >
-                                <label class="section__business--label"><input class="Section__form--check-noid" onclick="ativar(this)" id="business_M" type="checkbox"><span>Enviar uma Mensagem</span>
+                        <div class="section__business--mensagem As_buy">
+                            <div>
+                                <label class="section__business--label"><input class="Section__form--check-noid-buy"
+                                        onclick="ativar(this)" id="business_M" type="checkbox"><span>Enviar uma
+                                        Mensagem</span>
                                 </label>
                             </div>
                             <div id="business_M1" class="section--deactivated">
@@ -161,17 +183,37 @@
                                     placeholder="Eu estou interessado nesta viatura.Por favor me contate">
                             </div>
                         </div>
+                        <div class="section__business--mensagem As_Invest">
+                            <div>
+                                <label class="section__business--label "><input
+                                        class="Section__form--check-noid Section__form--check-noid-invest"
+                                        onclick="ativar(this)" id="business_MI" type="checkbox"><span>Enviar uma
+                                        Mensagem</span>
+                                </label>
+                            </div>
+                            <div id="business_MI1" class="section--deactivated">
+                                <input type="text" id="mensagem"
+                                    placeholder="Eu estou interessado nesta viatura.Por favor me contate">
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <div class="Section__form--check ">
-                    <div><input required id="Section__form--check" type="checkbox"></div>
+                    <div><input required class="Section__form--check-agree Section__form--check-agree-buy As_buy"
+                            type="checkbox"></div>
+                    <div><input class="Section__form--check-agree Section__form--check-agree-Invest As_Invest"
+                            type="checkbox"></div>
                     <span class="contenttxt">Concordo com o processamento dos meus dados conforme descrito na
                         <a>declaração de consentimento</a> da Delfos Stand Car. Posso revogar este consentimentoa
                         qualquer momento, com efeito para o futuro. </span>
                 </div>
 
-                <div class="Section__form--button"><button id="Section__form--button"
-                        class="button__default button__default--buy" type="submit">Enviar Mensagem</button></div>
+                <div class="Section__form--button As_buy">
+                    <button id="" class="button__default button__default--buy" type="submit">
+                        Enviar Mensagem
+                    </button>
+                </div>
+                
             </form>
 
             <p id="statusEnvio"></p>

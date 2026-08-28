@@ -179,8 +179,12 @@ html {
 
 }
 
-.Section__form--check-noid:checked {
+.Section__form--check-noid-buy:checked {
     background-color: var(--FocusBuy);
+}
+
+.Section__form--check-noid-invest:checked {
+    background-color: var(--FocusInvest);
 }
 
 .Section__form--check-noid:checked::after {
@@ -192,7 +196,7 @@ html {
     font-size: 14px;
 }
 
-#Section__form--check {
+.Section__form--check-agree {
     width: 22px;
     height: 22px;
     accent-color: var(--FocusBuy);
@@ -204,12 +208,15 @@ html {
     position: relative;
 }
 
-#Section__form--check:checked {
+.Section__form--check-agree-buy:checked {
     background-color: var(--FocusBuy);
+}
+.Section__form--check-agree-Invest:checked {
+    background-color: var(--FocusInvest);
 }
 
 
-#Section__form--check:checked::after {
+.Section__form--check-agree:checked::after {
     content: '✔';
     color: white;
     position: absolute;
