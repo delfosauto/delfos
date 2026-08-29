@@ -21,6 +21,7 @@ a {
     margin: 20px auto 0px auto;
     justify-content: space-between;
     padding-bottom: 20px;
+    gap: 5vw;
 }
 
 .More__button--default {

@@ -20,7 +20,7 @@
     --ContentTxt: #374151;
     --ContentLabel: #6b7280;
     --SectionDiv: #e2e8f0;
-    --SectionDiv2:#f5f5f5;
+    --SectionDiv2: #f5f5f5;
     --SectionBack: #f8fafc;
     --cor-titulo: #121212;
     --cor-text: #2b2b2b;
@@ -29,9 +29,11 @@
     /*Fote*/
     --fontMain: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* Imagens */
 .line--horiztone {
     margin: 0 auto;
@@ -41,18 +43,21 @@ html{
     border-bottom: 1px solid var(--SectionDiv);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 /* Color */
-.contentlabel{
+.contentlabel {
     /* cor forte */
     color: var(--cor-titulo);
     font-weight: 600;
 }
-.contenttxt{
+
+.contenttxt {
     /* cor fraca */
     color: var(--cor-text);
     font-weight: 400;
 }
-.primarycompany1{
+
+.primarycompany1 {
     color: var(--PrimaryCompany1);
 }
 
@@ -61,7 +66,7 @@ html{
     color: var(--Emprasy__Active--Buy);
     text-decoration: underline;
     font-weight: 700;
-    
+
     letter-spacing: -0.01em;
 }
 
@@ -83,6 +88,7 @@ body {
     letter-spacing: -0.01em;
     color: var(--FocusBuy);
 }
+
 .Hero_textDestaqInvs {
     font-weight: 500;
     font-size: 18px;
@@ -155,6 +161,7 @@ body {
     filter: brightness(1.15);
     transform: scale(0.92)
 }
+
 .button__default--more:active {
     display: flex;
     background-color: var(--SectionBack);
@@ -164,6 +171,7 @@ body {
     filter: brightness(1.15);
     transform: scale(0.92)
 }
+
 .button__default--seach:active {
     background-color: var(--PrimaryCompanyActive);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -188,7 +196,10 @@ body {
 }
 
 .button__default {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 153px;
     height: 40px;
     border: 1.1px solid var(--EmphasysWhite);
@@ -196,14 +207,16 @@ body {
     font-weight: 500;
     font-size: 15px;
     text-align: center;
-    line-height: 40px;
+    /* line-height: 40px; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
 }
+
+
 
 .button__default--more {
     background-color: #ffffff00;
     color: var(--EmphasysWhite);
-    
+    /* line-height: 40px */
 }
 
 .button__default--buy {
@@ -270,4 +283,3 @@ body {
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
 }
-

@@ -12,7 +12,10 @@ if (perfil === "InvesCust") {
 
 }
 else {
-    AsBuy.forEach(function (b) { return b.style.display = `block`; });
+    AsBuy.forEach(function (b) { 
+         return b.style.display = `block`;
+        //  b.style.margin = `auto`; 
+        });
     AsInvest.forEach(function (a) { return a.style.display = `none`; });
     TitleSeach.innerHTML = "Destaques para importação"
 }

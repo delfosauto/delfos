@@ -279,8 +279,7 @@ html {
     margin-bottom: 10px;
 }
 
-.section__final>div>div>a {
-
+.section__final>div>div>div {
     margin: auto;
 }
 
