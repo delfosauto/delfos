@@ -12,10 +12,9 @@ if (perfil === "InvesCust") {
 
 }
 else {
-    AsBuy.forEach(function (b) { 
-         return b.style.display = `block`;
-        //  b.style.margin = `auto`; 
-        });
+    AsBuy.forEach(function (b) {
+        return b.style.display = `block`;
+    });
     AsInvest.forEach(function (a) { return a.style.display = `none`; });
     TitleSeach.innerHTML = "Destaques para importação"
 }
@@ -67,5 +66,5 @@ function typeCustomer(type) {
 
 function TypeIdCar(IdCar) {
     let valor = IdCar.dataset.idlink;
-    localStorage.setItem("IdLink", valor);    
+    localStorage.setItem("IdLink", valor);
 }

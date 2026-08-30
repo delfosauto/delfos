@@ -55,8 +55,9 @@ html {
     border-radius: 8px;
 }
 
-.Section__form--button {
-    text-align: center;
+.Section__form--button>button {
+    
+    margin: 0 auto;
 
 }
 

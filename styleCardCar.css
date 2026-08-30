@@ -265,11 +265,15 @@ html {
     top: 87vh;
     border: 2px solid var(--EmphasysWhite);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    
 
 }
 
 .section__final>div {
     margin-top: 8px;
+    
 }
 
 .section__final>div>span {
@@ -279,11 +283,14 @@ html {
     margin-bottom: 10px;
 }
 
-.section__final>div>div>div>a {
-    margin: auto;
+.section__final>div>div>a {
+    display: flex;
+    align-content: center;
+    justify-self: center;
+
 }
 
-#gold {}
+
 
 /* Dados do veiculo */
 
