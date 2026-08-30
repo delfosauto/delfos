@@ -262,7 +262,9 @@ html {
     height: 120px;
     background-color: var(--PrimaryCompany1);
     position: fixed;
-    top: 87vh;
+    /* top: 87vh; */
+    bottom: 0;
+    left: 0;
     border: 2px solid var(--EmphasysWhite);
     border-radius: 5px;
     display: flex;
