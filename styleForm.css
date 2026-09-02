@@ -4,7 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+body{
+    width: 100vw;
+}
 html {
     height: 100vh;
 
@@ -12,10 +14,11 @@ html {
 
 .sectio__form-box {
     margin: auto;
-    width: 390px;
+    width: 80%;
+    max-width: 390px; 
     border: 1px solid var(--SectionDiv);
     border-radius: 8px;
-    padding: 20px 0px 20px 0px;
+    padding: 20px ;
     background-color: var(--SectionBack);
     margin-top: 15px;
     margin-bottom: 15px;
@@ -23,8 +26,6 @@ html {
 }
 
 .Section__form--referencia {
-    padding: 3px;
-    width: 360px;
     display: flex;
     margin: auto;
     gap: 10px;
@@ -69,12 +70,12 @@ html {
 
 .Section__form--inputHalf {
     display: flex;
-    width: 360px;
+    /* width: calc(100% - 30px); */
     margin: auto;
 }
 
 .Section__form--inputHalf-txt {
-    width: 170px;
+    /* width: 170px; */
     height: 23px;
     margin: 5px;
 }
@@ -100,7 +101,7 @@ html {
 }
 
 .section__business {
-    width: 360px;
+    
     margin: auto;
 }
 
@@ -125,7 +126,7 @@ html {
 }
 
 .section__business--mensagem>div>input:nth-child(1) {
-    width: 360px;
+    width: 100%;
     height: 70px;
 }
 
@@ -154,7 +155,8 @@ html {
 
 .Section__form--check {
     display: flex;
-    width: 370px;
+    width: 78%;
+    max-width: 360px;
     margin: auto;
     text-align: left;
     gap: 10px;
