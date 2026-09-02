@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delfos</title>
-    <!--Import materialize-->
+    <!--Import Css global-->
     <link rel="stylesheet" href="StyleMenuUP.css">
-    <!-- <link rel="stylesheet" href="styleIndexKnows.css"> -->
     <link rel="stylesheet" href="styleCorFonts.css">
+    <!--Import CSS specific-->
     <link rel="stylesheet" href="styleForm.css">
+    <!--Import Script global-->
     <script src="scriptUP.js" defer></script>
-    <!-- <script src="scripts.js" defer></script> -->
+    <!--Import Script especific-->
     <script src="scriptForm.js" defer></script>
-
+    <!--Import fonts-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -58,38 +59,39 @@
             <form id="Section__form">
                 <section class="sectio__form-box">
                     <div class="Section__form--inputHalf">
-                        <div>
-                            <label for="">Primeiro Nome<input class="Section__form--inputHalf-txt" type="text" id="nome"
-                                    placeholder="Por exemplo: João" required>
-                            </label>
+                        <div class="fild-box">
+                            <label for="">Primeiro Nome</label>
+                            <input class="Section__form--inputHalf-txt" type="text" id="nome"
+                                placeholder="Por exemplo: João" required>
                         </div>
-                        <div>
-                            <label for="">Sobrenome<input class="Section__form--inputHalf-txt" type="text"
-                                    id="sobrenome" placeholder="Por exemplo: Silva" required>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="Section__form--input">
-                        <div>
-                            <label for="">Seu e-mail
-                                <input class="Section__form--input-txt" type="email" id="email"
-                                    placeholder="Exemplo: seunome@example.com" required>
-                            </label>
+                        <div class="fild-box">
+                            <label for="">Sobrenome</label>
+                            <input class="Section__form--inputHalf-txt" type="text" id="sobrenome"
+                                placeholder="Por exemplo: Silva" required>
                         </div>
                     </div>
-                    <div class="Section__form--input-tel">
-                        <label for="">Seu número de telefone (opcional)
-                            <div>
-                                <select id="fixtele">
+                    <div class="Section__form--inputHalf">
+                        <div class="fild-box">
+                            <label for="">Seu e-mail</label>
+                            <input class="Section__form--input-txt" type="email" id="email"
+                                placeholder="Exemplo: seunome@example.com" required>
+                        </div>
+                    </div>
+                    <div class="Section__form--inputHalf ">
+                        <div class="fild-box">
+                            <label for="">Seu número de telefone (opcional)</label>
+                            <div class="">
+                                <select class="Section__form--inputHalf-tel-fix" id="fixtele">
                                     <option value="">+00</option>
                                     <option value="+351">+351</option>
                                     <option value="+32">+32</option>
                                     <option value="+49">+49</option>
                                 </select>
-                                <input type="tel" id="tele" placeholder="exemplo: 912345678" maxlength="9"
+                                <input class="Section__form--inputHalf-tel" type="tel" id="tele" placeholder="exemplo: 912345678" maxlength="9"
                                     pattern="[0-9]{9}" autocomplete="tel">
                             </div>
-                        </label>
+                        </div>
+
                     </div>
                     <input type="hidden" id="fixteleDolle">
                 </section>
@@ -128,7 +130,8 @@
 
                         <div>
                             <div class="As_buy"><label class="section__business--label"><input id="business_S"
-                                        onclick="ativar(this)" type="checkbox" class="Section__form--check-noid Section__form--check-noid-buy">
+                                        onclick="ativar(this)" type="checkbox"
+                                        class="Section__form--check-noid Section__form--check-noid-buy">
                                     <div><span>Retoma de veículo</span></div>
                                 </label>
                             </div>
@@ -180,15 +183,14 @@
                                 </label>
                             </div>
                             <div id="business_M1" class="section--deactivated">
-                                <input type="text" id="mensagem"
-                                    placeholder="Escreva aqui a sua dúvida">
+                                <input type="text" id="mensagem" placeholder="Escreva aqui a sua dúvida">
                             </div>
                         </div>
                     </div>
                 </section>
                 <div class="Section__form--check ">
-                    <div><input required id="form--check-agree"
-                            class="Section__form--check-agree" type="checkbox"></div>
+                    <div><input required id="form--check-agree" class="Section__form--check-agree" type="checkbox">
+                    </div>
 
                     <span class="contenttxt">Concordo com o processamento dos meus dados conforme descrito na
                         <a>declaração de consentimento</a> da Delfos Stand Car. Posso revogar este consentimentoa

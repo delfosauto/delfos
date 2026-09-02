@@ -24,15 +24,33 @@
     --SectionBack: #f8fafc;
     --cor-titulo: #121212;
     --cor-text: #2b2b2b;
-
-
     /*Fote*/
     --fontMain: 'Montserrat', sans-serif;
+}
+
+/*Config global*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--fontMain);
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 
 /* Imagens */
 .line--horiztone {

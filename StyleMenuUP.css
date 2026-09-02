@@ -3,10 +3,7 @@
 
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+
 
 main {
     position: relative;
@@ -31,7 +28,7 @@ main {
     color: var(--EmphasysWhite);
     padding: 20px;
     line-height: 2.5;
-    width: 98%;
+    width: 100%;
     margin: auto;
 }
 
@@ -42,7 +39,7 @@ main {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 97%;
+    width: 100%;
     position: fixed;
     z-index: 9999;
     background-color: var(--EmphasysWhite);

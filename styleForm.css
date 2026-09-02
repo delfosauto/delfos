@@ -1,24 +1,14 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    width: 100vw;
-}
-html {
-    height: 100vh;
 
-}
 
 .sectio__form-box {
     margin: auto;
-    width: 80%;
-    max-width: 390px; 
+    width: 90%;
+    max-width: 410px;
     border: 1px solid var(--SectionDiv);
     border-radius: 8px;
-    padding: 20px ;
+    padding: 10px;
     background-color: var(--SectionBack);
     margin-top: 15px;
     margin-bottom: 15px;
@@ -31,7 +21,7 @@ html {
     gap: 10px;
     border-radius: 8px;
     /* background-color: var(--SectionBack); */
-    
+
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -57,7 +47,7 @@ html {
 }
 
 .Section__form--button>button {
-    
+
     margin: 0 auto;
 
 }
@@ -70,14 +60,33 @@ html {
 
 .Section__form--inputHalf {
     display: flex;
-    /* width: calc(100% - 30px); */
+    flex-wrap: wrap;
     margin: auto;
+    gap: 10px;
 }
 
 .Section__form--inputHalf-txt {
-    /* width: 170px; */
+    width: 100%;
     height: 23px;
     margin: 5px;
+}
+.Section__form--inputHalf-tel{
+    width: 65%;
+    height: 23px;
+    margin: 5px;
+}
+
+.Section__form--inputHalf-tel-fix{
+    width: 25%;
+    height: 23px;
+    margin: 5px;
+}
+
+
+.fild-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 160px;
 }
 
 
@@ -88,20 +97,20 @@ html {
 }
 
 .Section__form--input-txt {
-    width: 360px;
+    width: 100%;
     height: 25px;
     margin: 5px;
 }
 
-.Section__form--input-tel {
+/* .Section__form--input-tel {
     display: flex;
     width: 360px;
     margin: auto;
 
-}
+} */
 
 .section__business {
-    
+
     margin: auto;
 }
 
@@ -214,6 +223,7 @@ html {
 .Section__form--check-agree-buy:checked {
     background-color: var(--FocusBuy);
 }
+
 .Section__form--check-agree-Invest:checked {
     background-color: var(--FocusInvest);
 }
