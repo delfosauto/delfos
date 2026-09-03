@@ -155,17 +155,16 @@ figure img {
 }
 
 .main__seach {
-    text-align: center;
+    display: flex;
     margin-top: 18px;
+   justify-content: center;
+   width: 50%;
 }
 
-.main__seach>div:nth-child(1) {
-    margin-bottom: 16px;
-}
 
 /*Elementos*/
 .main__elemento--selection-marca {
-    width: 350px;
+    width: 80%;
     margin: 5px 0px 7px 0px;
     padding: 10px;
     border: 2px solid var(--ContentLabel);
@@ -180,26 +179,42 @@ figure img {
 .main__classificado {
     display: flex;
     flex-wrap: wrap;
-    max-width: 960px;
+    max-width: 560px;
     justify-content: center;
     margin: 0 auto;
 }
+.main__classificado--tit, .main__classificado--price{
+    margin-bottom: 8px;
+}
+
+.main__classificado--price>div>div{
+    margin-bottom: 6px;
+}
+
 .main__classificado--priceNac {
     text-decoration: line-through;
     color: var(--ContentTxt);
+    
 }
 
 .main__classificado--priceInvest {
     margin-bottom: 3px;
     margin-top: 2px;
-
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    color: var(--novoverdeActive);
+    color: var(--cor-text);
 }
 
 .main__classificado>a {
     text-decoration: none;
     color: black;
+}
+
+.main__classificado--informar-carlist {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--cor-text);
 }
 
 .section__elemento {
@@ -219,7 +234,7 @@ figure img {
 
 .main__classificado--bloco {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     flex-grow: 0;
     background-color: var(--SectionBack);
     border-radius: 10px;
@@ -232,7 +247,7 @@ figure img {
 
 .main__classificado--bloco>div>h2 {
     font-size: 1.35em;
-    color: var(--PrimaryCompany1)
+    color: var(--cor-titulo)
 }
 
 .main__classificado--made {

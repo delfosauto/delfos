@@ -89,8 +89,7 @@ html {
 }
 
 .Focus_txt--invest {
-    color: var(--Emprasy__Active--Invest);
-    text-decoration: underline;
+    color: var(--cor-titulo);
     font-weight: 700;
     font-size: 22px;
     letter-spacing: -0.01em;
