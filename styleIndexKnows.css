@@ -45,12 +45,14 @@ a {
 
 .article__moreBuy:not(:last-child)::after {
     position: absolute;
-    content: "⬇";
-    left: 45%;
+    /* content: "⬇"; */
+    left: 42%;
     font-size: 50px;
     color: var(--ContentLabel);
     bottom: -25px;
     z-index: 9998;
+    content: "arrow_drop_down";
+    font-family: "Material Symbols Outlined";
 }
 
 .article__moreInvest:not(:last-child)::after {
@@ -142,7 +144,7 @@ a {
     gap: 10px;
 }
 
-.hero__section--slide>article {}
+
 
 .hero__article--slide>div>img {
     width: 60vw;
@@ -171,16 +173,26 @@ a {
     color: var(--PrimaryCompany2);
 }
 
+.article__moreBuy>div>div>span {
+    color: var(--FocusBuy);
+}
+
 .article__moreBuy>div>span {
     color: var(--FocusBuy);
 }
 
+.article__moreBuy>div {
+    display: flex;
+    margin-bottom: 3px;
+}
+
 .article__moreBuy {
-    height: 145px;
+    height: 160px;
     position: relative;
     display: flex;
-    padding: 10px 10px 10px 5px;
-    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 15px 10px 15px;
+    /* align-items: flex-start; */
     border: 1px solid var(--PrimaryCompany2);
 }
 
@@ -206,8 +218,11 @@ a {
 
 .article__moreBuy>div>H3,
 .article__moreInvest>div>H3 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
     color: var(--PrimaryCompany1);
-    margin-bottom: 8px;
     text-align: center;
 }
 
