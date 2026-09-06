@@ -127,10 +127,11 @@ body {
 
 }
 
-.section--Labe {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.25;
+.section--Label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
 }
 
 .section--Txt {
