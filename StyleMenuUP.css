@@ -66,13 +66,10 @@ main {
 #menu {
     position: absolute;
     display: none;
-    width: 200px;
-    height: 300px;
+    width: 240px;
+    height: 350px;
     padding: 20px;
 }
-
-
-
 
 button {
     border: none;

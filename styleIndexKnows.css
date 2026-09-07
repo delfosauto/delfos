@@ -79,15 +79,17 @@ a {
     margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: clamp(10px, 4vw, 18px);
 }
 
 .Hero__div--destaq>h2 {
-    margin: 0 20px;
+    /* margin: 0 20px; */
     color: var(--PrimaryCompany1);
 }
 
 .Hero__div--destaq>a {
-    margin-right: 20px;
     text-decoration: underline;
     color: var(--PrimaryCompanyEmph);
 }
@@ -123,15 +125,21 @@ a {
 }
 
 .hero__secction--buy {
-    background-image: linear-gradient(rgba(11, 30, 54, 0.65)), url(imagens/HeroFundoBuy_rev1.png);
+    background-image: linear-gradient(70deg,
+            rgba(11, 30, 54, 0.90),
+            rgba(11, 30, 54, 0.6)), url(imagens/HeroFundoBuy_rev2.png);
     background-size: cover;
 }
 
 .hero__secction--invest {
     background: linear-gradient(135deg,
-            rgba(5, 150, 104, 0.60),
-            rgba(11, 30, 54, 0.90)), url(imagens/HeroFundoInvest_rev1.png);
+            rgba(5, 150, 104, 0.65),
+            rgb(11, 30, 54)), url(imagens/HeroFundoInvest_rev3.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+
 }
 
 /* Secão carrocel */
