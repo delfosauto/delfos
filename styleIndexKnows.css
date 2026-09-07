@@ -123,14 +123,14 @@ a {
 }
 
 .hero__secction--buy {
-    background-image: linear-gradient(rgba(11, 30, 54, 0.65)), url(imagens/HeroFundoBuy.png);
+    background-image: linear-gradient(rgba(11, 30, 54, 0.65)), url(imagens/HeroFundoBuy_rev1.png);
     background-size: cover;
 }
 
 .hero__secction--invest {
     background: linear-gradient(135deg,
             rgba(5, 150, 104, 0.60),
-            rgba(11, 30, 54, 0.90)), url(imagens/HeroFundoInvest.png);
+            rgba(11, 30, 54, 0.90)), url(imagens/HeroFundoInvest_rev1.png);
     background-size: cover;
 }
 
@@ -167,6 +167,11 @@ a {
 
 /* Secções More*/
 
+.article__more--paragrafo {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .secction__moreBuy {
     width: 280px;
     margin: 0 auto;
@@ -187,11 +192,11 @@ a {
 }
 
 .article__moreBuy {
-    height: 170px;
+    height: 180px;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 12px 15px 14px 15px;
+    padding: 12px 16px 14px 16px;
     margin-bottom: 16px;
     /* align-items: flex-start; */
     border: 1px solid var(--PrimaryCompany2);
@@ -201,6 +206,8 @@ a {
 .article__moreBuy>.article__moreBuy--div {
     align-self: center;
 }
+
+
 
 .article__moreBuy1 {
     background-color: var(--EmphasysWhite);
@@ -240,7 +247,7 @@ a {
     width: 300px;
     margin: 0 auto;
     color: var(--PrimaryCompany2);
-    
+
 }
 
 .article__moreInvest {
@@ -254,7 +261,8 @@ a {
     flex-direction: column;
     padding: 13px 16px 13px 16px;
 }
-.article__moreInvest>div{
+
+.article__moreInvest>div {
     display: flex;
     margin-bottom: 6px;
 }
