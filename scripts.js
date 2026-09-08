@@ -1,79 +1,20 @@
-/*Objetos 1*/
-/**
- * @typedef {Object} carro
- * @property {number} Idlink
- * @property {string} origem
- * @property {string} fabricante
- * @property {string} modelo
- * @property {string} versão
- * @property {number} valorPT
- * @property {number} valor
- * @property {number} ano
- * @property {number} km
- * @property {string} fuel
- * @property {number} CV
- * @property {number} CC
- * @property {string} caixa
- * @property {number} consumB
- * @property {number} consumE
- */
 
+let AsBuy = document.querySelectorAll('.As_buy');
+let AsInvest = document.querySelectorAll(".As_Invest");
+let perfil = localStorage.getItem("TypeCustomer");
 
-/*Objetos 2*/
-/**
- * @typedef {Object} carroBDInvest
- * @property {number} id_link
- * @property {number} NCotas
- * @property {number} prazo
- * @property {number} Mincota
- * @property {number} RestCota
- * @property {number} profit
- * @property {number} profitPorc
- * @property {number} ReservCotas
- * @property {number} ReservBuy
- */
+if (perfil === "InvesCust") {
+    AsBuy.forEach(function (b) { return b.style.display = `none`; });
+    AsInvest.forEach(function (a) { return a.style.display = `block`; });
 
+}
+else {
+    AsBuy.forEach(function (b) {
+        return b.style.display = `block`;
+    });
+    AsInvest.forEach(function (a) { return a.style.display = `none`; });
 
-/** @type {carro[]} */
-const carros = [
-
-    { Idlink: 174497, origem: "Alemanha", fabricante: "Audi", modelo: "A3 Sportback", versão: "Attraction", valorPT: 12990, valor: 11940, ano: 2017, km: 180, fuel: "diesel", CV: 116, CC: 1.598, caixa: "Manual", consumB:4.1, consumE:4.5 },
-    { Idlink: 218943, origem: "Alemanha", fabricante: "Audi", modelo: "A3", versão: "Attraction", valorPT: 14994, valor: 12592, ano: 2016, km: 179, fuel: "diesel", CV: 110, CC: 1.598, caixa: "Manual", consumB:4.1, consumE:6.5 },
-    { Idlink: 392117, origem: "Alemanha", fabricante: "BMW", modelo: "118d F20", versão: "Sport Line", valorPT: 10750, valor: 9920, ano: 2012, km: 195, fuel: "diesel", CV: 143, CC: 1.995, caixa: "Manual", consumB:5.1, consumE:4.5 },
-]
-
-/** @type {carroBDInvest[]} */
-const BDInvest = [
-    { id_link: 174497, NCotas: 8, prazo: 60, Mincota: 1492.50, profit: 1050, profitPorc: 9, ReservCotas: 4, ReservBuy:7 },
-    { id_link: 218943, NCotas: 4, prazo: 90, Mincota: 3475, profit: 2900, profitPorc: 8, ReservCotas: 1, ReservBuy:4 },
-    { id_link: 392117, NCotas: 8, prazo: 60, Mincota: 1492.50, profit: 1050, profitPorc: 20, ReservCotas: 1, ReservBuy:2 }
-]
-
-
-/*Outros*/
-const BdSeguranca = [
-[174497,"ABS","Airbag do condutor",	"Airbag do passageiro","Airbag lateral do condutor e passageiro"],
-[218943,"ABS","Chamada automática de SOS","Airbag do condutor",	"Airbag do passageiro","Airbag lateral do condutor e passageiro"],
-[392117,"Chamada automática de SOS","Airbag do condutor",	"Airbag do passageiro","Airbag lateral do condutor e passageiro"]
-];
-
-const BdConducao = [
-[174497,"Cruise Control","Sensor de estacionamento traseiro","Assistente de estacionamento",	"Câmara de marcha-atrás","Retrovisores exteriores com regulação eléctrica",	"Sistema de aviso de transposição da via",	"Reconhecimento sinais trânsito","Luzes diurnas","Luzes diurnas LED","Faróis de nevoeiro","Farolim traseiro LED","	Travão de mão eléctrico","Direcção assistida"],
-[218943,"Sensor de estacionamento traseiro","Assistente de estacionamento",	"Câmara de marcha-atrás","Retrovisores exteriores com regulação eléctrica",	"Sistema de aviso de transposição da via",	"Reconhecimento sinais trânsito","Luzes diurnas","Faróis de nevoeiro","Farolim traseiro LED","	Travão de mão eléctrico","Direcção assistida"],
-[392117,"Assistente de estacionamento","Câmara de marcha-atrás","Retrovisores exteriores com regulação eléctrica",	"Sistema de aviso de transposição da via",	"Reconhecimento sinais trânsito","Luzes diurnas","Luzes diurnas LED","Faróis de nevoeiro","Farolim traseiro LED"]
-];
-
-const BdConforto = [
-[174497,"Estofos em tecido","Apoio de braço dianteiro",	"Volante em pele",	"Comandos do rádio no volante",	"Volante multifunções",	"Fecho central sem chave",	"Sensor de chuva",	"Vidros eléctricos dianteiros",	"Vidros eléctricos traseiros"],
-[218943,"Estofos em tecido","Apoio de braço dianteiro",	"Volante em pele",	"Comandos do rádio no volante",	"Volante multifunções",	"Fecho central sem chave",	"Sensor de chuva",	"Vidros eléctricos dianteiros",	"Vidros eléctricos traseiros"],
-[392117,"Estofos em tecido","Apoio de braço dianteiro",	"Volante em pele",	"Comandos do rádio no volante",	"Volante multifunções",	"Fecho central sem chave",	"Sensor de chuva",	"Vidros eléctricos dianteiros",	"Vidros eléctricos traseiros"]
-];
-
-const BdAudio = [
-[174497,"Apple CarPlay","Android Auto",	"Bluetooth,	Sistema mãos livres","Porta USB","Ecrã táctil",	"Controlo de funções do veículo por voz"],
-[218943,"Apple CarPlay","Android Auto",	"Bluetooth,	Sistema mãos livres","Porta USB","Ecrã táctil",	"Controlo de funções do veículo por voz"],
-[392117,"Apple CarPlay","Android Auto",	"Bluetooth,	Sistema mãos livres","Porta USB","Ecrã táctil",	"Controlo de funções do veículo por voz"]
-];
+}
 
 /*Origin new photo */
 let picture1 = document.querySelector("#IdCarImg1");
@@ -104,9 +45,9 @@ let ClientBuy = document.getElementById("section__Price--attention-ClientBuy");
 let consumoB = document.getElementById("sectio__detalhes--ConfBasic-ConsB");
 let consumoE = document.getElementById("sectio__detalhes--ConfBasic-ConsE");
 /*Seach value on table */
-let linha = carros.findIndex(lin => lin.Idlink == IdLink);
-// console.log(IdLink);
-//console.log(linha);
+let linha = carros.findIndex(lin => lin.IdSite == IdLink);
+console.log(IdLink);
+console.log(linha);
 
 /*Add new photo */
 picture1.src = "compras/" + IdLink + ".png";
@@ -129,14 +70,14 @@ cc.innerHTML = carros[linha].CC;
 embreagem.innerHTML = carros[linha].caixa;
 consumoB.innerHTML = carros[linha].consumB;
 consumoE.innerHTML = carros[linha].consumE;
-refeCar.innerHTML = carros[linha].Idlink;
+refeCar.innerHTML = carros[linha].IdSite;
 prata.innerHTML = carros[linha].valor;
 membros.innerText = BDInvest[linha].ReservCotas;
 ClientBuy.innerText = BDInvest[linha].ReservBuy;
 /*Progess bar */
 let valorBarra = ((BDInvest[linha].ReservCotas / BDInvest[linha].NCotas) * 100);
 progress.style.width = valorBarra + "px";
-prataPorc.innerHTML = valorBarra;
+prataPorc.innerHTML = valorBarra.toFixed(0);
 
 
 /*Save idCar on localStorege*/
@@ -147,9 +88,9 @@ function pageBack() {
 /*Create elements input:radio*/
 
 let LineInvest = BDInvest.findIndex(function (a) {
-    return a.id_link == IdLink;
+    return a.IdSite == IdLink;
 });
-console.log("Index do BD (idlink)"+LineInvest);
+console.log("Index do BD (idlink)" + LineInvest);
 for (let a = 1; a <= BDInvest[LineInvest].NCotas; a++) {
     let local = document.getElementById("price_simu");
     //create div e Label    
@@ -169,96 +110,95 @@ for (let a = 1; a <= BDInvest[LineInvest].NCotas; a++) {
 }
 /*Inative cota */
 
-let i = document.querySelectorAll("label").forEach(function (a) {
-    let i = a.textContent;
-    if (i[1] > (BDInvest[linha].NCotas-BDInvest[linha].ReservCotas)){
-    console.log("Cotas reservadas "+i[1]);
-    a.classList.add("section__Price--Reservado");
+let i = document.querySelectorAll("label>span").forEach(function (a) {
+    if (a.id > (BDInvest[linha].NCotas - BDInvest[linha].ReservCotas)) {
+        // console.log("Cotas reservadas " + a.id);
+        a.classList.add("section__Price--Reservado");
     }
 })
 
 /*Create elements condução tab*/
-for (let z=1; z<=BdConducao.length+1; z++){
-//TR creation
-let seguraTab = document.getElementById("conducaoTab");
-seguraTab.appendChild(document.createElement("tr")).id=z+"__conducaoTab--TR";
-let tr = document.getElementById(z+"__conducaoTab--TR");
-//TR, TD creation
-tr.appendChild(document.createElement("th")).id=z+"__conducaoTab--TH";
-tr.appendChild(document.createElement("td")).id=z+"__conducaoTab--TD";
-let th = document.getElementById(z+"__conducaoTab--TH");
-let td = document.getElementById(z+"__conducaoTab--TD");
-//Span creation
-td.appendChild(document.createElement("span")).id =z+"__conducaoTab--SPAM";
-let spam = document.getElementById(z+"__conducaoTab--SPAM");
-//Add inforation
-th.innerText = BdConducao[linha][z];
-th.classList.add("contenttxt")
-spam.classList.add("material-symbols-outlined");
-spam.innerText = "check_box";
+for (let z = 1; z <= BdConducao.length + 1; z++) {
+    //TR creation
+    let seguraTab = document.getElementById("conducaoTab");
+    seguraTab.appendChild(document.createElement("tr")).id = z + "__conducaoTab--TR";
+    let tr = document.getElementById(z + "__conducaoTab--TR");
+    //TR, TD creation
+    tr.appendChild(document.createElement("th")).id = z + "__conducaoTab--TH";
+    tr.appendChild(document.createElement("td")).id = z + "__conducaoTab--TD";
+    let th = document.getElementById(z + "__conducaoTab--TH");
+    let td = document.getElementById(z + "__conducaoTab--TD");
+    //Span creation
+    td.appendChild(document.createElement("span")).id = z + "__conducaoTab--SPAM";
+    let spam = document.getElementById(z + "__conducaoTab--SPAM");
+    //Add inforation
+    th.innerText = BdConducao[linha][z];
+    th.classList.add("contenttxt")
+    spam.classList.add("material-symbols-outlined");
+    spam.innerText = "check_box";
 }
 
 /*Create elements segurança tab*/
-for (let z=1; z<=BdSeguranca.length+1; z++){
-//TR creation
-let seguraTab = document.getElementById("seguraTab");
-seguraTab.appendChild(document.createElement("tr")).id=z+"__seguraTab--TR";
-let tr = document.getElementById(z+"__seguraTab--TR");
-//TR, TD creation
-tr.appendChild(document.createElement("th")).id=z+"__seguraTab--TH";
-tr.appendChild(document.createElement("td")).id=z+"__seguraTab--TD";
-let th = document.getElementById(z+"__seguraTab--TH");
-let td = document.getElementById(z+"__seguraTab--TD");
-//Span creation
-td.appendChild(document.createElement("span")).id =z+"__seguraTab--SPAM";
-let spam = document.getElementById(z+"__seguraTab--SPAM");
-//Add inforation
-th.innerText = BdSeguranca[linha][z];
-th.classList.add("contenttxt")
-spam.classList.add("material-symbols-outlined");
-spam.innerText = "check_box";
+for (let z = 1; z <= BdSeguranca.length + 1; z++) {
+    //TR creation
+    let seguraTab = document.getElementById("seguraTab");
+    seguraTab.appendChild(document.createElement("tr")).id = z + "__seguraTab--TR";
+    let tr = document.getElementById(z + "__seguraTab--TR");
+    //TR, TD creation
+    tr.appendChild(document.createElement("th")).id = z + "__seguraTab--TH";
+    tr.appendChild(document.createElement("td")).id = z + "__seguraTab--TD";
+    let th = document.getElementById(z + "__seguraTab--TH");
+    let td = document.getElementById(z + "__seguraTab--TD");
+    //Span creation
+    td.appendChild(document.createElement("span")).id = z + "__seguraTab--SPAM";
+    let spam = document.getElementById(z + "__seguraTab--SPAM");
+    //Add inforation
+    th.innerText = BdSeguranca[linha][z];
+    th.classList.add("contenttxt")
+    spam.classList.add("material-symbols-outlined");
+    spam.innerText = "check_box";
 }
 
 /*Create elements conforto tab*/
-for (let z=1; z<=BdConforto.length+1; z++){
-//TR creation
-let confortoTab = document.getElementById("confortoTab");
-confortoTab.appendChild(document.createElement("tr")).id=z+"__confortoTab--TR";
-let tr = document.getElementById(z+"__confortoTab--TR");
-//TR, TD creation
-tr.appendChild(document.createElement("th")).id=z+"__confortoTab--TH";
-tr.appendChild(document.createElement("td")).id=z+"__confortoTab--TD";
-let th = document.getElementById(z+"__confortoTab--TH");
-let td = document.getElementById(z+"__confortoTab--TD");
-//Span creation
-td.appendChild(document.createElement("span")).id =z+"__confortoTab--SPAM";
-let spam = document.getElementById(z+"__confortoTab--SPAM");
-//Add inforation
-th.innerText = BdConforto[linha][z];
-th.classList.add("contenttxt")
-spam.classList.add("material-symbols-outlined");
-spam.innerText = "check_box";
+for (let z = 1; z <= BdConforto.length + 1; z++) {
+    //TR creation
+    let confortoTab = document.getElementById("confortoTab");
+    confortoTab.appendChild(document.createElement("tr")).id = z + "__confortoTab--TR";
+    let tr = document.getElementById(z + "__confortoTab--TR");
+    //TR, TD creation
+    tr.appendChild(document.createElement("th")).id = z + "__confortoTab--TH";
+    tr.appendChild(document.createElement("td")).id = z + "__confortoTab--TD";
+    let th = document.getElementById(z + "__confortoTab--TH");
+    let td = document.getElementById(z + "__confortoTab--TD");
+    //Span creation
+    td.appendChild(document.createElement("span")).id = z + "__confortoTab--SPAM";
+    let spam = document.getElementById(z + "__confortoTab--SPAM");
+    //Add inforation
+    th.innerText = BdConforto[linha][z];
+    th.classList.add("contenttxt")
+    spam.classList.add("material-symbols-outlined");
+    spam.innerText = "check_box";
 }
 
 /*Create elements Audio tab*/
-for (let z=1; z<=BdAudio.length+1; z++){
-//TR creation
-let audioTab = document.getElementById("audioTab");
-audioTab.appendChild(document.createElement("tr")).id=z+"__audioTab--TR";
-let tr = document.getElementById(z+"__audioTab--TR");
-//TR, TD creation
-tr.appendChild(document.createElement("th")).id=z+"__audioTab--TH";
-tr.appendChild(document.createElement("td")).id=z+"__audioTab--TD";
-let th = document.getElementById(z+"__audioTab--TH");
-let td = document.getElementById(z+"__audioTab--TD");
-//Span creation
-td.appendChild(document.createElement("span")).id =z+"__audioTab--SPAM";
-let spam = document.getElementById(z+"__audioTab--SPAM");
-//Add inforation
-th.innerText = BdAudio[linha][z];
-th.classList.add("contenttxt")
-spam.classList.add("material-symbols-outlined");
-spam.innerText = "check_box";
+for (let z = 1; z <= BdAudio.length + 1; z++) {
+    //TR creation
+    let audioTab = document.getElementById("audioTab");
+    audioTab.appendChild(document.createElement("tr")).id = z + "__audioTab--TR";
+    let tr = document.getElementById(z + "__audioTab--TR");
+    //TR, TD creation
+    tr.appendChild(document.createElement("th")).id = z + "__audioTab--TH";
+    tr.appendChild(document.createElement("td")).id = z + "__audioTab--TD";
+    let th = document.getElementById(z + "__audioTab--TH");
+    let td = document.getElementById(z + "__audioTab--TD");
+    //Span creation
+    td.appendChild(document.createElement("span")).id = z + "__audioTab--SPAM";
+    let spam = document.getElementById(z + "__audioTab--SPAM");
+    //Add inforation
+    th.innerText = BdAudio[linha][z];
+    th.classList.add("contenttxt")
+    spam.classList.add("material-symbols-outlined");
+    spam.innerText = "check_box";
 }
 
 /*Screen calculation */
@@ -272,8 +212,8 @@ function LLInvest(e) {
     LL.innerText = LLCalc;
     LLPorc.innerText = BDInvest[LineInvest].profitPorc;
     term.innerText = BDInvest[LineInvest].prazo;
-    localStorage.setItem("valor",LLCalc);
-    localStorage.setItem("NCotas",id);
-    localStorage.setItem("CotaMin",BDInvest[linha].Mincota);
-    localStorage.setItem("Prazo",BDInvest[LineInvest].prazo);
+    localStorage.setItem("valor", LLCalc);
+    localStorage.setItem("NCotas", id);
+    localStorage.setItem("CotaMin", BDInvest[linha].Mincota);
+    localStorage.setItem("Prazo", BDInvest[LineInvest].prazo);
 }

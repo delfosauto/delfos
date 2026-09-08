@@ -16,7 +16,7 @@ a {
 
 figure img {
     width: 100%;
-    height: 100%;
+    height: 260px;
     object-fit: cover;
     margin-bottom: 10px;
 }
