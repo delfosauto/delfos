@@ -121,8 +121,14 @@ a {
 .hero__secction--subdiv {
     width: 90%;
     color: var(--EmphasysWhite);
-    
     padding: 20px;
+}
+.hero__secction--subdiv-invest {
+    display: grid;
+    width: 95%;
+    color: var(--EmphasysWhite);
+    padding: 20px;
+  
 }
 
 .hero__secction--buy {
@@ -140,7 +146,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     text-align: right;
-
+    display: grid;
+    justify-items: end;
 }
 
 /* Secão carrocel */
@@ -257,7 +264,7 @@ a {
     width: 300px;
     margin: 0 auto;
     color: var(--PrimaryCompany2);
-
+    margin-top: 36px;
 }
 
 .article__moreInvest {
