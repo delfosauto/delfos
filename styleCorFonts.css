@@ -265,9 +265,9 @@ font-size: 19px;
     padding-right: 3px;
     align-items: center;
     width: 140px;
-    height: 40px;
+    height: 47px;
     border: 1.1px solid var(--EmphasysWhite);
-    border-radius: 5px;
+    border-radius: 7px;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -297,9 +297,9 @@ font-size: 19px;
     background-color: #ffffff00;
     color: var(--PrimaryCompany1);
     width: 149px;
-    height: 40px;
+    height: 46px;
     border: 1.1px solid var(--PrimaryCompany1);
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 500;
     font-size: 15px;
     text-align: center;
@@ -309,8 +309,8 @@ font-size: 19px;
 
 .button__default--invest {
     width: 140px;
-    height: 40px;
-    border-radius: 5px;
+    height: 47px;
+    border-radius: 7px;
     font-weight: 500;
     /* font-size: 15px; */
     background-color: var(--FocusInvest);
@@ -327,8 +327,8 @@ font-size: 19px;
     position: absolute;
     font-family: 'Material Symbols Outlined';
     content: "\e8cc";
-    left: -10px;
-    top: -1;
+    left: -6px;
+    
     font-size: 24px;
     font-weight: 300;
 }

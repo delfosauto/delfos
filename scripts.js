@@ -107,6 +107,8 @@ for (let a = 1; a <= BDInvest[LineInvest].NCotas; a++) {
     let tempSpan = document.getElementById(a);
     tempSpan.innerText = " " + a + " Cota " + "(" + (BDInvest[LineInvest].Mincota * a + " €") + ")";
     tempSpan.addEventListener('click', LLInvest);
+    // tempInput.addEventListener('click', LLInvest);
+    
 }
 /*Inative cota */
 
