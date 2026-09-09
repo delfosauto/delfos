@@ -99,7 +99,7 @@ body {
 }
 
 .herobuy--titulo {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.22;
     margin-bottom: 16px;
@@ -109,7 +109,7 @@ body {
 }
 
 .herobuy--texto {
-    font-size: 19px;
+    font-size: 22px;
     line-height: 1.5;
     margin-bottom: 12px;
    
@@ -117,11 +117,11 @@ body {
 }
 
 .herobuy--apoio {
-    font-size: 19px;
+    font-size: 22px;
     line-height: 1.5;
     font-weight: 500;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .heroinvest--titulo{
@@ -150,7 +150,7 @@ font-size: 19px;
 
 .Hero_textDestaq {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: -0.01em;
     color: var(--FocusBuy);
 }
@@ -261,13 +261,15 @@ font-size: 19px;
 .button__default {
     display: flex;
     justify-content: center;
+    padding-left: 3px;
+    padding-right: 3px;
     align-items: center;
-    width: 153px;
+    width: 140px;
     height: 40px;
     border: 1.1px solid var(--EmphasysWhite);
     border-radius: 5px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -306,7 +308,7 @@ font-size: 19px;
 }
 
 .button__default--invest {
-    width: 153px;
+    width: 140px;
     height: 40px;
     border-radius: 5px;
     font-weight: 500;
