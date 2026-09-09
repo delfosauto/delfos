@@ -112,17 +112,17 @@ a {
 
 .hero__secction {
     width: 100%;
-    min-height: 320px;
+    min-height: 300px;
     border-radius: 3px;
     margin: 0px auto;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 .hero__secction--subdiv {
-    width: 80%;
+    width: 90%;
     color: var(--EmphasysWhite);
-    margin: 0 auto;
-    padding-top: 20px;
+    
+    padding: 20px;
 }
 
 .hero__secction--buy {

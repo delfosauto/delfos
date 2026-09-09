@@ -99,7 +99,7 @@ body {
 }
 
 .herobuy--titulo {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
     line-height: 1.22;
     margin-bottom: 16px;
@@ -109,7 +109,7 @@ body {
 }
 
 .herobuy--texto {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 1.5;
     margin-bottom: 12px;
    
@@ -117,7 +117,7 @@ body {
 }
 
 .herobuy--apoio {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 1.5;
     font-weight: 500;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
