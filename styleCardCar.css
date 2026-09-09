@@ -49,7 +49,7 @@ html {
 .main__classificado--card {
     max-width: 380px;
     width: 97%;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 10px 20px 10px;
     margin: 0 auto;
 }
 
@@ -291,9 +291,13 @@ html {
 .section__final>div>div>a {
     display: flex;
     align-content: center;
-    justify-self: center;
-
+    /* justify-self: center; */
 }
+.section__final>div>div{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -333,8 +337,12 @@ html {
 }
 
 .sectio__detalhes--ConfBasic {
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: auto;
+    max-width: 380px;
+    width: 97%;
+
 }
 
 .sectio__detalhes--ConfBasic>h2 {
@@ -360,8 +368,8 @@ html {
 .main__input--access {
     max-width: 360px;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     margin: 0 auto;
 
 }

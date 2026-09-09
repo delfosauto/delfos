@@ -118,7 +118,7 @@ let i = document.querySelectorAll("label>span").forEach(function (a) {
 })
 
 /*Create elements condução tab*/
-for (let z = 1; z <= BdConducao.length + 1; z++) {
+for (let z = 1; z < BdConducao[linha].length; z++) {
     //TR creation
     let seguraTab = document.getElementById("conducaoTab");
     seguraTab.appendChild(document.createElement("tr")).id = z + "__conducaoTab--TR";
@@ -129,17 +129,17 @@ for (let z = 1; z <= BdConducao.length + 1; z++) {
     let th = document.getElementById(z + "__conducaoTab--TH");
     let td = document.getElementById(z + "__conducaoTab--TD");
     //Span creation
-    td.appendChild(document.createElement("span")).id = z + "__conducaoTab--SPAM";
+    th.appendChild(document.createElement("span")).id = z + "__conducaoTab--SPAM";
     let spam = document.getElementById(z + "__conducaoTab--SPAM");
     //Add inforation
-    th.innerText = BdConducao[linha][z];
-    th.classList.add("contenttxt")
+    td.innerText = BdConducao[linha][z];
+    td.classList.add("contenttxt")
     spam.classList.add("material-symbols-outlined");
     spam.innerText = "check_box";
 }
 
 /*Create elements segurança tab*/
-for (let z = 1; z <= BdSeguranca.length + 1; z++) {
+for (let z = 1; z < BdSeguranca[linha].length; z++) {
     //TR creation
     let seguraTab = document.getElementById("seguraTab");
     seguraTab.appendChild(document.createElement("tr")).id = z + "__seguraTab--TR";
@@ -150,17 +150,17 @@ for (let z = 1; z <= BdSeguranca.length + 1; z++) {
     let th = document.getElementById(z + "__seguraTab--TH");
     let td = document.getElementById(z + "__seguraTab--TD");
     //Span creation
-    td.appendChild(document.createElement("span")).id = z + "__seguraTab--SPAM";
+    th.appendChild(document.createElement("span")).id = z + "__seguraTab--SPAM";
     let spam = document.getElementById(z + "__seguraTab--SPAM");
     //Add inforation
-    th.innerText = BdSeguranca[linha][z];
-    th.classList.add("contenttxt")
+    td.innerText = BdSeguranca[linha][z];
+    td.classList.add("contenttxt")
     spam.classList.add("material-symbols-outlined");
     spam.innerText = "check_box";
 }
 
 /*Create elements conforto tab*/
-for (let z = 1; z <= BdConforto.length + 1; z++) {
+for (let z = 1; z < BdConforto[linha].length; z++) {
     //TR creation
     let confortoTab = document.getElementById("confortoTab");
     confortoTab.appendChild(document.createElement("tr")).id = z + "__confortoTab--TR";
@@ -171,17 +171,17 @@ for (let z = 1; z <= BdConforto.length + 1; z++) {
     let th = document.getElementById(z + "__confortoTab--TH");
     let td = document.getElementById(z + "__confortoTab--TD");
     //Span creation
-    td.appendChild(document.createElement("span")).id = z + "__confortoTab--SPAM";
+    th.appendChild(document.createElement("span")).id = z + "__confortoTab--SPAM";
     let spam = document.getElementById(z + "__confortoTab--SPAM");
     //Add inforation
-    th.innerText = BdConforto[linha][z];
-    th.classList.add("contenttxt")
+    td.innerText = BdConforto[linha][z];
+    td.classList.add("contenttxt")
     spam.classList.add("material-symbols-outlined");
     spam.innerText = "check_box";
 }
 
 /*Create elements Audio tab*/
-for (let z = 1; z <= BdAudio.length + 1; z++) {
+for (let z = 1; z < BdAudio[linha].length; z++) {
     //TR creation
     let audioTab = document.getElementById("audioTab");
     audioTab.appendChild(document.createElement("tr")).id = z + "__audioTab--TR";
@@ -192,11 +192,11 @@ for (let z = 1; z <= BdAudio.length + 1; z++) {
     let th = document.getElementById(z + "__audioTab--TH");
     let td = document.getElementById(z + "__audioTab--TD");
     //Span creation
-    td.appendChild(document.createElement("span")).id = z + "__audioTab--SPAM";
+    th.appendChild(document.createElement("span")).id = z + "__audioTab--SPAM";
     let spam = document.getElementById(z + "__audioTab--SPAM");
     //Add inforation
-    th.innerText = BdAudio[linha][z];
-    th.classList.add("contenttxt")
+    td.innerText = BdAudio[linha][z];
+    td.classList.add("contenttxt")
     spam.classList.add("material-symbols-outlined");
     spam.innerText = "check_box";
 }
