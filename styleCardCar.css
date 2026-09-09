@@ -47,7 +47,7 @@ html {
 
 /* Body */
 .main__classificado--card {
-    max-width: 320px;
+    max-width: 380px;
     width: 97%;
     padding: 20px 0px 20px 0px;
     margin: 0 auto;
@@ -96,7 +96,7 @@ html {
     border-radius: 10px;
     justify-content: center;
     padding: 8px;
-    width: 310px;
+    width: 95%;
     margin: 0 auto;
     gap: 10px;
 }
@@ -116,10 +116,13 @@ html {
 
 .section--PriceInvest {
     margin-bottom: 20px;
+    width: 100%;
+    padding: 0 2vw 0 2vw;
 }
 
+
 .section--PriceInvest>div {
-    width: 100%;
+
     text-align: center;
     display: flex;
     gap: 8px;
@@ -268,13 +271,13 @@ html {
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    
+
 
 }
 
 .section__final>div {
     margin-top: 8px;
-    
+
 }
 
 .section__final>div>span {
@@ -294,6 +297,12 @@ html {
 
 
 /* Dados do veiculo */
+
+.main__input--inf {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
 
 .main__input--inf>h2 {
     text-align: center;
@@ -326,19 +335,21 @@ html {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .sectio__detalhes--ConfBasic>h2 {
-     text-align: center;
-     margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .main__input--Made {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: auto;
+    max-width: 380px;
+    width: 97%;
 }
 
 .main__input--Made>h2 {
     text-align: center;
-    
+
 }
 
 #refeCar {
@@ -346,10 +357,12 @@ html {
 }
 
 .main__input--access {
-
+    max-width: 360px;
+    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     margin: 0 auto;
+
 }
 
 .main__input--access>h2 {
@@ -361,9 +374,13 @@ html {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center; */
+    max-width: 380px;
+    width: 97%;
+
 }
-table{
-    width: 380px;
+
+table {
+    width: 100%;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 10px;
